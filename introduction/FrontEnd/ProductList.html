@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        h1 {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Product List</h1>
+    <hr />
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+
+    <script>
+        async function fetchProducts() {
+            let response = await fetch('http://localhost:3000/products');
+            let productArr = await response.json();
+            console.log(productArr);
+            let row = document.querySelector('.row');
+
+            productArr.forEach(product => {
+                row.innerHTML += `
+                    <div class="col-sm-3 mb-4">
+                        <div class="card h-100">
+                            <img src="${product.image}" class="card-img-top" alt="${product.title}" height="200">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">${product.title}</h5>
+                                <p class="card-text">
+                                    Category: ${product.category}
+                                </p>
+                                <p class="card-text text-truncate">
+                                    Description: ${product.description}
+                                </p>
+                                <p>₹${product.price}</p>
+                                <p>${product.rating.rate}</p>
+                                <button class="btn btn-primary"> Details</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+        fetchProducts()
+    </script>
+</body>
+
+</html>

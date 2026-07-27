@@ -12,5 +12,44 @@ Tools & Softwares
 Clone the folder
 ================
 git clone https://github.com/sanjaysamantra1/Eureka_27_july_2026
+
+
+
+Get Latest Content From github
+==============================
+git pull
   
       
+
+
+Web Development 
+===============
+-Developing Websites
+
+1. FrontEnd : User Interface  ( Look & Feel )
+        HTML: Content ( table, div, paragraph, h1 , input box)
+        CSS:  Styling  ( color, background color , padding , margin , width , height )
+        Bootstrap: CSS Library ( inbuilt Css classes )
+        Javascript: dynamic page content
+        Angular/React: 
+
+2. BackEnd : Develop REST APIs (https://fakestoreapi.com/products)
+             ( Java / Python / PHP / Go / .net )
+
+3. DataBase : Holds application Data ( Oracle , mySql, mongoDB )
+
+
+
+What We are Going to Learn
+===========================
+FrontEnd : HTML,CSS,Bootstrap,Javascript,Angular 
+BackEnd : Python , FastAPI
+DataBase : Oracle DB
+
+
+
+What We are not Going to Learn
+===============================
+FrontEnd : React  
+BackEnd : Java, spring, .net , PHP , Go 
+DataBase : mySQl , mongodb, postgresql
