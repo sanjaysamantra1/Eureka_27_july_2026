@@ -1,0 +1,69 @@
+Emmets / Shortcuts
+==================
+https://docs.emmet.io/cheat-sheet/
+
+!    HTML-5 Code
+table>tbody>tr*10>td*5{Data-$}
+
+
+
+
+create an HTML file and open in browser
+=========================================
+1. create an HTML and add code (addition.html)
+
+2. To Open/Run HTML file in browser 
+   a. install vscode extension ( open in browser / live server )
+   b. alt+b  / alt+shift+b
+
+
+
+How to use CSS in HTML Files
+============================
+1. inline css 
+   style attribute, Element/Tag level
+   ex: <h1 style="color:red">This is My First HTML Program</h1>
+
+2. internal css
+   <style>  Tag , Page/File Level Css
+
+3. external css  (project/application level css)
+   a. create a separate .css file ( styles.css )
+   b. include that css file into HTML file using <link>
+      <link rel="stylesheet" href="./addition.css">
+
+
+
+How to use Bootstrap in HTML Files
+==================================
+-Bootstrap is a css library
+-Has lot of pre-defined css classes
+-Maintained by twitter
+-Bootstrap 5 is the latest version
+-Official Link : https://getbootstrap.com/
+
+Add CDN Link of bootstrap in HTML file using <link>
+    ex: <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+Types of Javascript
+===================
+1. internal Javascript
+   <script></script>   Page/File level
+
+2. external javascript
+   a. create a separate .js file and write javascript code there
+   b. include that javascript file into HTML file using <script></script>
+      ex: <script src="./addition.js"></script>
+
+
+
+
+Assginments
+============
+1. display List of country names using <ol>  <li>
+2. display List of country names in a dropdown using <select> <option>
+3. create a student table using bootstrap to display roll,name,subject,mark
+4. Display few products (3-4 cards) using bootstrap card (static content)
+5. create a html file even_odd.html , write logic to check if a number is even or odd
