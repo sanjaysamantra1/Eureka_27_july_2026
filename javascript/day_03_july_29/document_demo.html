@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Let's learn document Object From Javascript</h1>
+    <div id="div1">Document object has lot of inbuilt methods</div>
+
+    <script>
+        let msg = 'Helloo, Good Morning';
+        console.log(msg);
+        document.write(msg);
+
+        // find the div whose id=div1 , change the fontsize
+        document.getElementById('div1').style.fontSize = '48px';
+        document.querySelector('#div1').style.color = 'purple';
+
+
+        // find the h1 and change the color=red
+        document.querySelector('h1').style.color = 'red';
+    </script>
+</body>
+
+</html>
