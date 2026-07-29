@@ -2,8 +2,21 @@ Most Commonly Used javascript Objects
 =====================================
 console : log() , warn(), error(), table(), time(), timeEnd()
 document : write(), getElementById(), querySelector() 
-window :   alert(),  confirm(), prompt()
+window :   alert(),  confirm(), prompt(), atob(), btoa()
 Math :    max(), min(), sqrt(), cbrt()
 Array :  push(), pop(), slice(), filter(), map()
 Object:  groupBy() , keys(), values()
 JSON :   stringify(), parse()
+
+
+
+Window methods
+==============
+alert() : Display alert Message
+          Message + Ok
+
+confirm() : User Confirmation
+            Message + ok (true) cancel(false)
+
+prompt() : To Collect User Input    
+           inputBox + message + ok,cancel    
