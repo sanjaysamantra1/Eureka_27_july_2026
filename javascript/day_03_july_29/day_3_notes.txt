@@ -20,3 +20,38 @@ confirm() : User Confirmation
 
 prompt() : To Collect User Input    
            inputBox + message + ok,cancel    
+
+
+Note: Window object methods can be directly invoked without object name
+      window.alert() // valid
+      alert()  // valid
+
+      console.log()  // valid
+      log()          // invalid
+
+
+
+Datatypes
+=========
+-using 'typeof' operator we can identify the datatype of any value
+
+1. Primitive
+        number : 5 , 5.4 , -2.3 , 8.11111
+        string : 'virat' , "sachin" , "10" , 'true' , ""
+        boolean : true , false
+        undefined : undefined
+        bigint
+        symbol
+
+2. non-primitive
+        Object :  {}   []
+
+
+
+
+Assignments
+===========
+Write the solutions for the below questions in both Javascript & Python
+
+1. ask user to enter 2 numbers find which number is greater
+2. ask user to enter 3 subject marks(math,computer,physics) , find the total & avg
