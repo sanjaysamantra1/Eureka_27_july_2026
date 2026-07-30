@@ -1,0 +1,14 @@
+<script>
+    const PI = 3.141;
+    // PI = 5.141; // Assignment to constant variable
+
+    const cars = ['Tata', 'Honda'];
+    console.log(cars)
+    cars.push('Maruti'); // allowed - yes
+    delete cars[1];      // allowed - yes
+    console.log(cars);
+
+    // How can we restrict to add.delete items into array
+    Object.freeze(cars);
+    cars.push('Mahindra'); // object is not extensible
+</script>
