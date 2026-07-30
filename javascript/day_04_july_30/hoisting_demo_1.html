@@ -1,0 +1,11 @@
+<script>
+    console.log(`a: ${a}`);  // undefined  (Hoisting)  Limitation of var
+    // console.log(`b: ${b}`);  // Cannot access 'b' before initialization , TDZ
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(`a: ${a}`);  // 10
+    console.log(`b: ${b}`);  // 20     
+    console.log(`c: ${c}`);  // 30   
+    // in Javascript variables can be used before they are intialized with their actual values, Hoisting 
+</script>

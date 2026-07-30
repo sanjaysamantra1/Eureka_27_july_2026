@@ -1,0 +1,13 @@
+<script>
+    console.log('Global ', a); // undefined (Hoisting)
+    var a = 10;
+
+    function f1() {
+        console.log('f1...', a); // undefined (Hoisting)
+        var a = 20;
+        console.log('f1...', a);  // 20
+    }
+    f1();
+
+    console.log('Global ', a);  // 10
+</script>

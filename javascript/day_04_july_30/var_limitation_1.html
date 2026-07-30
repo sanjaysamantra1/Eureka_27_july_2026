@@ -1,0 +1,20 @@
+<script>
+    // var supports only global & function scope
+    // var doesn't support local scope :
+    // inside a block if we declare a var variable , it can be used outside the block
+
+    var a = 10; // its a global variable
+    function f1() {
+        var b = 20; // function variable
+        {
+            var c = 30; // c is declared in block-1
+            console.log('Block-1 ', c)
+        }
+        {   // block-2 is able to access 'c' from block-1
+            console.log('Block-2 ', c)
+        }
+    }
+    f1();
+    // a 'var' variable declared inside a block is visible outside the block
+    // var c = 30;
+</script>

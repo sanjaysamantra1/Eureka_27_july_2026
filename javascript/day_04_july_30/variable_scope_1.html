@@ -1,0 +1,30 @@
+<script>
+    var a = 10;
+    let b = 20;
+    const c = 30;  // Gloabl variables
+    console.log('Global: ', a, b, c);
+
+    function f1() {
+        var d = 40; // function variable
+        console.log('F1 function: ', a, b, c, d);
+        // console.log('e ', e);
+
+        { // Block-1
+            let x = 100;
+            console.log('Block-1: ', a, b, c, d, x);
+        }
+        { // block-2
+            let y = 200;
+            console.log('Block-2: ', a, b, c, d, y);
+        }
+
+    }
+    f1()
+
+    function f2() {
+        var e = 50;
+        console.log('F2 function: ', a, b, c, e);
+        // console.log('d ', d);
+    }
+    f2()
+</script>

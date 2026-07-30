@@ -58,3 +58,12 @@ Temporal Dead Zone
 -The state where variables are un-reachable. They are in memory, but they aren't usable.
 -The let and const variables exist in the TDZ from the start of their enclosing scope until they are initialized.
 -if a let/const variable is accessed before its initialization, it would throw a ReferenceError. Because of the TDZ.
+
+
+
+
+Variable Scopes:
+===============
+1. global : declared outside the function
+2. function : declared inside the function
+3. block   : declared inside the block
