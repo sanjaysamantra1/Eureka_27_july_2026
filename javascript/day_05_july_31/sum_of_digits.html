@@ -1,0 +1,13 @@
+<script>
+    let rem = 0, sum = 0;
+    function sumofDigits(num) {
+        while (num != 0) {
+            rem = num % 10;
+            sum = sum + rem;
+            num = num / 10;
+        }
+        return sum;
+    }
+    let res = sumofDigits(125);
+    console.log('Result is: ', res);
+</script>

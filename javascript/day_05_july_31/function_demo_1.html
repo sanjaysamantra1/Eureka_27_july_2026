@@ -8,7 +8,10 @@
 
 
     // 2. function expression
-    let sub = function (a, b) {
+    console.log("sub: ", sub);
+    sub(200, 100);  // Cannot access 'sub' before initialization
+
+    var sub = function (a, b) {
         console.log(`Subtraction of ${a} and ${b} is ${a - b}`);
     }
     sub(20, 10)
