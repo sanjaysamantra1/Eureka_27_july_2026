@@ -8,11 +8,17 @@
 
 
     // 2. function expression
-    console.log("sub: ", sub);
-    sub(200, 100);  // Cannot access 'sub' before initialization
-
+    // console.log("sub: ", sub);
+    // sub(200, 100);  // Cannot access 'sub' before initialization
     var sub = function (a, b) {
         console.log(`Subtraction of ${a} and ${b} is ${a - b}`);
     }
     sub(20, 10)
+
+
+    // 3. Arrow Function   ES_6   2015
+    var mul = (a, b) => {
+        console.log(`Multiplication of ${a} and ${b} is ${a * b}`);
+    }
+    mul(10, 20)
 </script>
