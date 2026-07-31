@@ -1,0 +1,25 @@
+<script>
+    console.log('Global Code starts here...')
+    console.log('a', a); // undefined  Hoisting
+    console.log('b', b); // Error : TDZ  
+    var a = 10;
+    let b = 20;
+    const c = 30;
+    console.log(a, b, c);
+
+    function f2() {
+        console.log('f2 starts...')
+        let e = 50;
+        console.log(e);
+        console.log('f2 ends...')
+    }
+    function f1() {
+        console.log('f1 starts...')
+        let d = 40;
+        console.log(d);
+        f2();
+        console.log('f1 ends...')
+    }
+    f1();
+    console.log('Global Code ends here...')
+</script>
