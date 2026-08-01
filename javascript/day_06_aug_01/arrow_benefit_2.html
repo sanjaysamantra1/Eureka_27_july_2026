@@ -1,0 +1,23 @@
+<script>
+    class User {
+        firstName = 'Virat';
+        lastName = 'Kohli';
+        fullName1() {  // Regular - this : how/where the function is called
+            console.log(this); // this = user
+            console.log('FullName-1 : ', this.firstName, this.lastName)
+        }
+        fullName2 = () => { // Arrow - this : Where the function is written(outer/lexical scope)
+            console.log(this)  // this = user
+            console.log('FullName-2 : ', this.firstName, this.lastName)
+        }
+    }
+    let user1 = new User();
+    user1.fullName1();
+    user1.fullName2();
+
+    setTimeout(user1.fullName1, 4000)
+    setTimeout(user1.fullName2, 8000)
+
+    // any regular function passed as callback function to setTimeout , this=window
+    // any arrow function passed as callback function to setTimeout , this=lexical scope
+</script>

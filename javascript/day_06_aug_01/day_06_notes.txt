@@ -22,3 +22,20 @@ Arrow Function Limitations
 
 Arrow Function benefits
 =======================
+-uses 'this' value from lexical scope
+-Lexical Scope : immediate outer scope / the scope where the function is written
+
+
+
+Closure
+=======
+-an inner function retains access to its outer function's variables even after outer functions execution is completed.
+-closure will not be seen for outer functions.
+-closure will be seen for inner functions only if inner function accesses outer functions data
+
+
+Why Closure
+===========
+-Data Encapsulation
+
+Data Encapsulation = Data Hiding + allow to access  the data using member function
