@@ -1,0 +1,24 @@
+Arrow Function 
+==============
+-Shorter in syntax
+-Anonymous
+-are not hoisted
+-function keyword is not used
+-function body is optional
+-return is optional
+
+
+this
+====
+-'this' is a keyword
+-'this' refers to the object that is executing the current code
+
+
+Arrow Function Limitations
+==========================
+1. arrow functions shoudn't be used as object methods
+2. arrow functions shouldn't be used as event listeners
+
+
+Arrow Function benefits
+=======================

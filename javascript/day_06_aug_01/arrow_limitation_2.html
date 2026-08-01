@@ -1,0 +1,22 @@
+<body>
+    <button id="btn1">Button-1</button>
+    <button id="btn2">Button-2</button>
+    <button id="btn3">Button-3</button>
+
+    <script>
+        var a = 10;
+        console.log('Global: ', this);
+        console.log('Global: ', this.a);
+        function changeColor() { 
+            console.log(this);  // this = btn1 / btn2 / btn3 (dynamic)
+            this.style.backgroundColor = 'red';
+        }
+        /* let changeColor = () => {
+            console.log(this);  // this = window (static)
+            this.style.backgroundColor = 'red';
+        } */
+        document.getElementById('btn1').addEventListener('click', changeColor)
+        document.getElementById('btn2').addEventListener('click', changeColor)
+        document.getElementById('btn3').addEventListener('click', changeColor)
+    </script>
+</body>

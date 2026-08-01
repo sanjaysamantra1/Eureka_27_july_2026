@@ -1,0 +1,32 @@
+<script>
+    class User {
+        firstName = 'Virat';
+        lastName = 'Kohli';
+        fullName1() {  // Regular - this : how/where the function is called
+            console.log(this); // this = user
+            console.log(this.firstName, this.lastName)
+        }
+        fullName2 = () => { // Arrow - this : Where the function is written(outer/lexical scope)
+            console.log(this)  // this = user
+            console.log(this.firstName, this.lastName)
+        }
+    }
+    let user1 = new User();
+    user1.fullName1();
+    user1.fullName2();
+
+    let a = user1.fullName2;
+    a();
+    let b = a;
+    b();
+    let c = b;
+    c();
+    let d = c;
+    d();
+
+    let x = user1.fullName1;
+    x();
+
+    // Note: when a regular function is stored in a variable and invoked, this = will not be pointing to the class/object
+    //  when an arrow function is stored in a variable and invoked, this will always point to the place where it is written
+</script>
