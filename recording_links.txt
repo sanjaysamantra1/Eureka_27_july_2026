@@ -21,3 +21,7 @@ Passcode: f39m?1Tb
 day_06_aug_01:
 https://zoom.us/rec/share/kzEmhxrHZ_q2ZVKmmaDEFpdowvoeL1AcTyT5TqHETl2VlPYeDTEHthIfIjpD1HZr.jSCOTSUgITgeKOX2 
 Passcode: @k2V+sFv
+
+day_07_aug_02:
+https://zoom.us/rec/share/rVCMRr88izy89kzwa3SAFcCj4MsSW0170Tkc7-WSayhBnr_E8Cecmp8PW_vS88X_.r1J-ysrrkR6KiPTF 
+Passcode: T+!8e3i7
