@@ -1,0 +1,13 @@
+<script>
+    let str = 'JavaScript Class';
+
+    console.log(str.slice(4));  // Script Class
+    console.log(str.substring(4));  // Script Class
+
+    console.log(str.slice(4, 10));      // Script
+    console.log(str.substring(4, 10));  // Script
+
+    // Slice works with -ve index, but substring() doesnt
+    console.log(str.slice(4, -2));      // Script Cla
+    console.log(str.substring(4, -2));  // Java
+</script>

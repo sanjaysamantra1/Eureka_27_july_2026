@@ -1,0 +1,15 @@
+<script>
+    // display the first non-repeated char , result - R
+    let str = 'entertainment';
+    for (char of str) {
+        if (str.indexOf(char) == str.lastIndexOf(char)) {
+            console.log('Non Repeated Char: ', char);
+            break;
+        }
+    }
+    /*
+        1. iterate each char in the the string
+        2. check the indexOf() and lastIndexOf() for that char 
+        3. if indexOf() and lastIndexOf() returns the same value, that is not repeated
+    */
+</script>
