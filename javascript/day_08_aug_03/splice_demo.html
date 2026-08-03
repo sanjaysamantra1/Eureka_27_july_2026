@@ -1,0 +1,14 @@
+<script>
+    // [].splice(index, #elements to delete , elements to add)
+    // 1. only delete   2. only add  3. both delete & add
+
+    let arr = [10, 20, 30, 40];
+    arr.splice(1, 2);  // only delete
+    console.log('After Delete ', arr); // [10,40]
+
+    arr.splice(1, 0, 30, 40); // only add
+    console.log('After Add ', arr); // [10, 20, 30, 40]
+
+    arr.splice(1, 2, 25, 35); // both add & delete
+    console.log(arr); // [10, 25, 35, 40]
+</script>

@@ -1,0 +1,37 @@
+<script>
+    let cars = ['Tata', 'Honda', 'Maruti', 'Hyundai'];
+    // at what index 'Maruti' car is present, use indexOf()
+    console.log('Maruti is present at index: ', cars.indexOf('Maruti'));
+    // indexOf() can be used to check where the element is present if the elements are primitives
+
+
+    let employees = [
+        { id: 1, name: 'Amit Sharma', role: 'Manager', salary: 85000, gender: 'male' },
+        { id: 2, name: 'Priya Verma', role: 'Developer', salary: 65000, gender: 'female' },
+        { id: 3, name: 'Rahul Mehta', role: 'Tester', salary: 38000, gender: 'male' },
+        { id: 4, name: 'Sneha Iyer', role: 'Developer', salary: 42000, gender: 'female' },
+        { id: 5, name: 'Karan Singh', role: 'Manager', salary: 52000, gender: 'male' },
+        { id: 6, name: 'Neha Gupta', role: 'Tester', salary: 72000, gender: 'female' }
+    ];
+    // display the first female employee details
+    let first_female_emp = employees.find((emp) => emp.gender == 'female');
+    console.log('first_female_emp: ', first_female_emp)
+
+    // at what index first female employee is present, findIndex()
+    // indexOf() cann't be used to check where the element is present if the elements are not primitives
+    let first_female_emp_ind = employees.findIndex((emp) => emp.gender == 'female');
+    console.log('first_female_emp_ind: ', first_female_emp_ind)
+
+    // display the last female employee details
+    let last_female_emp = employees.findLast((emp) => emp.gender == 'female');
+    console.log('last_female_emp: ', last_female_emp)
+
+    // at what index last female employee is present, findLastIndex()
+    let last_female_emp_ind = employees.findLastIndex((emp) => emp.gender == 'female');
+    console.log('last_female_emp_ind: ', last_female_emp_ind)
+
+    // Display all the female employees, filter()
+    let all_female_emps = employees.filter((emp) => emp.gender == 'female');
+    console.log('all_female_emps: ', all_female_emps)
+
+</script>

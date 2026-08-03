@@ -1,0 +1,10 @@
+<script>
+    /*  10. WAP to move all the special characters to the end of the string
+     input:- 'hello@#hi&'
+    output:- 'hellohi@#&' */
+
+    let input = 'hello@#hi&';
+    let only_alphabets = input.replace(/[^a-z A-Z 0-9]/g, '');
+    let only_specialchars = input.replace(/[a-z A-Z 0-9]/g, '');
+    console.log(only_alphabets, only_specialchars)
+</script>

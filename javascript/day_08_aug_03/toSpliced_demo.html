@@ -1,0 +1,10 @@
+<script>
+    let originalArr = [10, 20, 30, 40, 50]
+
+    console.log('originalArr: ', originalArr);
+    // replace 20,30 with 25,35 without impacting original Array
+
+    let newArr = originalArr.toSpliced(1, 2, 25, 35);
+    console.log('originalArr: ', originalArr);
+    console.log('newArr: ', newArr);
+</script>
