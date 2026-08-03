@@ -1,0 +1,13 @@
+<script>
+    let arr1 = [20, 50, 10, 30, 40];
+    arr1.sort();
+    console.log('arr1: ', arr1);
+
+    let arr2 = [101, 9, 8, 6, 91, 85, 92, 102, 103, 5];
+    arr2.sort();  // not numeric sort, string sort
+    console.log('arr2: ', arr2);
+
+    // How to perform numeric sort
+    arr2.sort((a, b) => a - b);
+    console.log('arr2: ', arr2)
+</script>

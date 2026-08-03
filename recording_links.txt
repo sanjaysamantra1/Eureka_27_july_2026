@@ -25,3 +25,7 @@ Passcode: @k2V+sFv
 day_07_aug_02:
 https://zoom.us/rec/share/rVCMRr88izy89kzwa3SAFcCj4MsSW0170Tkc7-WSayhBnr_E8Cecmp8PW_vS88X_.r1J-ysrrkR6KiPTF 
 Passcode: T+!8e3i7
+
+day_08_aug_03:
+https://zoom.us/rec/share/NeWnq5Uh38Ka4Bs5juM579wZQx1Q8oSqZLk1ilZNcHyUhxEcv3j3Ehz7gUSQprxm.Exc1WksY0A3HHm63 
+Passcode: XGV7$r20
