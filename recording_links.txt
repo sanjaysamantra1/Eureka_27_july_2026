@@ -29,3 +29,7 @@ Passcode: T+!8e3i7
 day_08_aug_03:
 https://zoom.us/rec/share/NeWnq5Uh38Ka4Bs5juM579wZQx1Q8oSqZLk1ilZNcHyUhxEcv3j3Ehz7gUSQprxm.Exc1WksY0A3HHm63 
 Passcode: XGV7$r20
+
+day_09_aug_04:
+https://zoom.us/rec/share/f_pwRwHXpwgCfYXHOa2YF3oJ6gwdLVPznJevESbROK7JpUvGebmKFWnhi23H3dnh.uOv9p_JKbgsEW44e 
+Passcode: .0SGhBz&

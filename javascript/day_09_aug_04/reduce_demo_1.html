@@ -1,0 +1,31 @@
+<script>
+    let str = 'Javascript';
+    // reverse this string using reduce()
+    let revStr = str.split('').reduce((prev, curr) => {
+        console.log(prev, curr)
+        return curr + prev;
+    }, '');
+    console.log(`Reverse of ${str} is ${revStr}`);
+
+
+    let arr = [10, 20, 30, 40, 50];
+    // find the sum of all these nums
+    let sum = arr.reduce((prev, curr) => {
+        console.log(prev, curr)
+        return curr + prev;
+    }, 0)
+    console.log(`Sum is: ${sum}`)
+
+
+    let myStr = 'entertainment';
+    let res = myStr.split('').reduce((obj, char) => {
+        console.log(obj, char);
+        if (obj[char]) {
+            obj[char] = obj[char] + 1;
+        } else {
+            obj[char] = 1;
+        }
+        return obj;
+    }, {})
+    console.log(res);  // {e:3 , n:3,t:3}
+</script>

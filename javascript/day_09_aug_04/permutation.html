@@ -1,0 +1,25 @@
+<script>
+    /*
+    8. Ask user to enter a 3 letter word, print all the permutations using those 3 letters.
+    input: 'ABC'
+    output: ABC , ACB , BAC, BCA, CAB, CBA 
+
+    Logic:
+    1. iterate each character
+    2. get current Character , get Remaining Chars
+    3. keep current Character constant, swap/change Remaining Chars
+    */
+
+    function printPermutations(str, res = '') {
+        if (!str.length) {
+            console.log(res);
+        }
+        for (let i = 0; i < str.length; i++) {
+            let currentChar = str[i];
+            let remainingChars = str.substr(0, i) + str.substr(i + 1);
+            printPermutations(remainingChars, res + currentChar)
+        }
+    }
+    printPermutations('')
+    printPermutations('ABC')
+</script>

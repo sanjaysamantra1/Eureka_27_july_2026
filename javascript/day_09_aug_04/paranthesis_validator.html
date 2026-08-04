@@ -1,0 +1,38 @@
+<script>
+    /*  7. Ask user to enter a sequence of parantheses and validate 
+    input: '([{ }])'
+    output : true */
+
+    /* 
+     Steps:
+     1. create an empty STACK
+     2. iterate each character, if char is ( [ { push that in to stack
+     3. if closing bracket is seen 
+         pop the last value from stack 
+         if the last element is the not the pair of the closing bracket , then return false
+     4. after processing all the characters 
+         if the stack is empty, return true, else false
+    */
+    function isValidParanthesis(str) {
+        let stack = [];
+        let bracketMap = {
+            ')': '(',
+            '}': '{',
+            ']': '[',
+        }
+        for (ch of str) {
+            let topMostChar = stack[stack.length - 1];
+
+            if (ch == '(' || ch == '{' || ch == '[') {
+                stack.push(ch)
+            } else if (topMostChar == bracketMap[ch]) {
+                stack.pop()
+            } else {
+                return false
+            }
+        }
+        return stack.length ? false : true;
+    }
+    // console.log(isValidParanthesis('([{}])'))
+    console.log(isValidParanthesis('([{}])}'))
+</script>
