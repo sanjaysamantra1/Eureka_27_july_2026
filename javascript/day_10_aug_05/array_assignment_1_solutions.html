@@ -1,0 +1,90 @@
+<script>
+    let employees = [
+        { eId: 101, name: 'sanjay', sal: 5000, gender: 'male' },
+        { eId: 104, name: 'geeta', sal: 8000, gender: 'female' },
+        { eId: 103, name: 'sameer', sal: 7000, gender: 'male' },
+        { eId: 102, name: 'sita', sal: 9000, gender: 'female' },
+        { eId: 105, name: 'deepak', sal: 8000, gender: 'male' }
+    ];
+    // 1. declare array of employees & sort them in ascending order (empId)
+    let result1 = employees.toSorted((emp1, emp2) => emp1.eId - emp2.eId);
+    console.log('1. Sorted Employees by eId: ', result1)
+
+    // 2. declare array of employees & sort them in ascending order by name.
+    let result2 = employees.sort((emp1, emp2) => emp1.name.localeCompare(emp2.name));
+    console.log('2. Sorted Employees by Name: ', result2)
+
+    // 3. Find the employee with the highest salary
+    let result3 = employees.toSorted((emp1, emp2) => emp2.sal - emp1.sal)[0];
+    console.log('3. employee with the highest salary: ', result3);
+
+    // 4. declare array of employees & filter the employees whose salary between 6000 and 8000
+    let result4 = employees.filter((emp) => emp.sal >= 6000 && emp.sal <= 8000)
+    console.log('4. salary between 6000 and 8000: ', result4);
+
+    // 5. declare array of employees & increase salary of every employee by 10%
+    let result5 = employees.map((emp) => {
+        return { ...emp, sal: emp.sal + emp.sal * 10 };
+    })
+    console.log('5. increase salary of every employee by 10%: ', result5);
+
+    // 6. declare array of employees & add "comp:ibm" to every employee;
+    let result6 = employees.map((emp) => {
+        return { ...emp, comp: 'IBM' };
+    })
+    console.log('6. add "comp:ibm" to every employee: ', result6);
+
+    // 7. add Dept info for each employee
+    employeesArr = [
+        { eId: 101, name: "sanjay", sal: 5000, gender: "male" },
+        { eId: 104, name: "reena", sal: 8000, gender: "female" }
+    ]
+    departments = [
+        { eId: 101, dept: "sales" },
+        { eId: 104, dept: "marketing" }
+    ]
+    let result7 = [];
+    for (emp of employeesArr) {
+        let deptObj = departments.find((dept) => dept.eId === emp.eId);
+        if (deptObj) {
+            result7.push({ ...emp, dept: deptObj.dept })
+        } else {
+            result7.push(emp)
+        }
+    }
+    console.log('7. Employees with Department Info: ', result7);
+
+
+    /* 8. WAP to print the occurance of each elements */
+    let arr = [10, 20, 30, 40, 50, 10, 30, 50];
+    let result8 = {}
+    for (ele of arr) {
+        if (result8[ele]) {
+            result8[ele] = result8[ele] + 1
+        } else {
+            result8[ele] = 1;
+        }
+    }
+    console.log('8. Element Occurance: ', result8);
+
+    /* 9.groupBy employees-gender */
+    // let result9 = Object.groupBy(employees, (emp) => emp.gender)
+    let result9 = employees.reduce((obj, emp) => {
+        if (emp.gender == 'male') {
+            obj.male.push(emp)
+        } else {
+            obj.female.push(emp)
+        }
+        return obj;
+    }, { male: [], female: [] })
+    console.log('9. Employees Grouped by Gender: ', result9);
+
+    // 10. Find the total salary of all 'Male' employees
+    let result10 = employees.reduce((totalSal, emp) => {
+        if (emp.gender == 'male') {
+            totalSal = totalSal + emp.sal;
+        } 
+        return totalSal;
+    }, 0);
+    console.log('10. total salary of all male emps: ', result10);
+</script>
