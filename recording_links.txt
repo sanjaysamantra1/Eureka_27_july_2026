@@ -33,3 +33,7 @@ Passcode: XGV7$r20
 day_09_aug_04:
 https://zoom.us/rec/share/f_pwRwHXpwgCfYXHOa2YF3oJ6gwdLVPznJevESbROK7JpUvGebmKFWnhi23H3dnh.uOv9p_JKbgsEW44e 
 Passcode: .0SGhBz&
+
+day_10_aug_05:
+https://zoom.us/rec/share/tH-CKBKyCbY5cS5qiCmUFv-8KNPSQnFLHsu9SC6MIM3VQsg_LDOYhsvwgWUe2FKu.bL2t06drHY4dECjc 
+Passcode: 0Z#S7*4t
