@@ -1,0 +1,25 @@
+<script>
+    /*  Q8.Group students by city and find average marks per city.
+         Expected: { delhi: 63.5, mumbai: 65, pune: 88 } */
+
+    let students = [
+        { sId: 401, name: 'ravi', marks: 72, grade: 'B', city: 'delhi' },
+        { sId: 403, name: 'priya', marks: 91, grade: 'A', city: 'mumbai' },
+        { sId: 402, name: 'arjun', marks: 55, grade: 'C', city: 'delhi' },
+        { sId: 405, name: 'sneha', marks: 88, grade: 'A', city: 'pune' },
+        { sId: 404, name: 'rohit', marks: 40, grade: 'D', city: 'mumbai' }
+    ];
+
+    let grouped_student = {};
+    for (stud of students) { // block
+        const city = stud.city;
+        if (!grouped_student[city]) {
+            grouped_student[city] = { total: 0, count: 0, avg: 0 };
+        }
+        grouped_student[city].total = grouped_student[city].total + stud.marks;
+        grouped_student[city].count = grouped_student[city].count + 1;
+        grouped_student[city].avg = grouped_student[city].total / grouped_student[city].count;
+    }
+    console.log('grouped_student:: ', grouped_student)
+
+</script>
