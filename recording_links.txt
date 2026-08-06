@@ -37,3 +37,8 @@ Passcode: .0SGhBz&
 day_10_aug_05:
 https://zoom.us/rec/share/tH-CKBKyCbY5cS5qiCmUFv-8KNPSQnFLHsu9SC6MIM3VQsg_LDOYhsvwgWUe2FKu.bL2t06drHY4dECjc 
 Passcode: 0Z#S7*4t
+
+
+day_11_aug_06:
+https://zoom.us/rec/share/RHcrkf5tnUlz8UDTQ3B5mAekaJhRyM7Dp5ogrdNcx8D_bNcRzANnsjRAP2efgHaU.vdmDrvOdJc05JKYF 
+Passcode: *Eh7Fy&d
