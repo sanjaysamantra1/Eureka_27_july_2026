@@ -1,0 +1,9 @@
+<script>
+    let cars = ['tata', 'honda', 'maruti', 'toyota', 'honda', 'maruti', 'honda', 'maruti'];
+
+    let unique_set = new Set(cars);
+    console.log('unique_set: ', unique_set)
+
+    let unique_cars = [...unique_set] // spread : shallow copy
+    console.log('unique_array: ', unique_cars)
+</script>

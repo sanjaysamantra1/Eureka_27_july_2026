@@ -14,7 +14,7 @@
     for (stud of students) { // block
         const city = stud.city;
         if (!grouped_student[city]) {
-            grouped_student[city] = { total: 0, count: 0, avg: 0 };
+            grouped_student[city] = { "total": 0, "count": 0, "avg": 0 };
         }
         grouped_student[city].total = grouped_student[city].total + stud.marks;
         grouped_student[city].count = grouped_student[city].count + 1;

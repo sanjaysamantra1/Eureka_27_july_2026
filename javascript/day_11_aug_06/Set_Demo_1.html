@@ -1,0 +1,28 @@
+<script>
+    let carSet = new Set();
+    console.log('carSet: ', carSet);
+
+    // To Add Items
+    carSet.add('Tata')
+    carSet.add('Honda')
+    carSet.add('Maruti')
+    carSet.add('Tata')
+    carSet.add('Honda')
+    console.log('carSet: ', carSet);
+
+    // length
+    console.log('length: ', carSet.size)
+
+
+    // Check if a value is present 
+    console.log('Tata is present? ', carSet.has('Tata'))
+    console.log('Hyundai is present? ', carSet.has('Hyundai'))
+
+    // delete 1 value
+    carSet.delete('Maruti');
+    console.log('carSet: ', carSet);
+
+    // clear -delete all values
+    carSet.clear()
+    console.log('carSet: ', carSet);
+</script>
