@@ -1,0 +1,24 @@
+<script>
+    const user = { name: 'Virat', age: 35, add: 'mumbai' }; // object
+
+    // there are use cases where objects cannot be directly used
+    // 1. storing in Session storage   2. send data to API  3. print on the screen
+    document.write(user);
+    sessionStorage.setItem('userInfo', user);
+
+    // This is where javascript objects has to be strigified
+    const userStr = JSON.stringify(user);
+    document.write(userStr);
+    sessionStorage.setItem('userData', userStr);
+
+
+    // Need of converting json string to javascript objects
+    let userData = sessionStorage.getItem('userData');
+    console.log('userData', userData) // userData is string
+    console.log('userData.name', userData.name); // undefined , userData is string
+
+    let userObj = JSON.parse(userData);
+    console.log('userObj', userObj) // userObj is object
+    console.log('userObj.name', userObj.name);
+
+</script>

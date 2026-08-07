@@ -1,0 +1,30 @@
+<script>
+    let user = { firstName: 'Virat', 'last name': "Kohli", age: 35, add: 'mumbai' };
+
+    console.log('Name: ', user.firstName); // Virat
+    console.log('Age: ', user["age"]); // 35
+
+    // console.log('Last Name: ', user.last name); 
+    console.log('Last Name: ', user['last name']); // Kohli
+
+    let a = 'add';
+    console.log('Address: ', user.a);  // look for 'a' field in user object
+    console.log('Address: ', user[a]);  // look for 'add' field in user object
+
+    console.log('User: ', user);
+    let all_keys = Object.keys(user);
+    console.log('all_keys: ', all_keys)
+    console.log('User object length: ', all_keys.length);
+
+
+    console.log('age is present in user? ', 'age' in user); // true
+    console.log('DOB is present in user? ', 'dob' in user); // false
+
+    let all_values = Object.values(user);
+    let all_entries = Object.entries(user);
+    console.log('all_keys: ', all_keys)
+    console.log('all_values: ', all_values)
+    console.log('all_entries: ', all_entries)
+    let userObj = Object.fromEntries(all_entries);
+    console.log('userObj: ', userObj)
+</script>

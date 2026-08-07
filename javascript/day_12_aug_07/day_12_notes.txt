@@ -1,0 +1,124 @@
+Javascript : Object / Map
+Python : Dictionary
+
+
+Object/Dictionary: To Store data in key:Value Pair
+
+
+
+'Object' class
+==============
+-Objects are variables that can contain many values inside it.
+-Collection of properties & values. 
+   ex: {prop1:val1,prop2:val2}
+-Object properties are written in 'key:value' pairs. 
+  ex: let user = {name:'sachin' , age:35, add:'mumbai'}
+-we can access object properties in two ways:
+	objectName.propertyName;       user.name;
+	objectName["propertyName"];    user['age'];
+-object properties are case sensitive
+	let obj = {a:10,b:20};
+	console.log(obj.a); // 10 
+	console.log(obj.A); // undefined
+-4 ways to create javascript object
+   1. Object Literal    ex: var obj1 = {};
+   2. Object create()   ex: var obj2 = Object.create({});
+   3. Object Class	    ex: var obj3 = new Object();
+   4. Using Class		ex: var obj4 = new Employee();
+-How to get the length of the object
+	Object.keys(obj).length;
+	
+-How to check if a property exists in an object
+ console.log(propertyName in obj)   (also includes prototype properties)
+ obj.hasOwnProperty(propertyName)   (doesn't includes prototype properties)
+ 
+-a property descriptor is the metadata/configuration that controls how an object property behaves
+    Object.getOwnPropertyDescriptor(object, propertyName)
+	Object.defineProperty(user, "name",{value:"sanjay", writable: false});
+	Object.defineProperty(user, "password",{value:"secret", enumerable: false});
+	
+-getters & setters
+ A getter runs when we read a property, A setter runs when we assign a value to a property
+
+ 
+ 
+ 
+-Object class static functions : 
+	assign() - Copies properties from one or more source objects to a target object.
+	create() -  creates a new object, using an existing object as the prototype of the newly created object
+	freeze() - Freezes an object. neither the structure nor values can be changed. (shallow)
+	isFrozen() - Determines if an object was frozen
+	seal()  - structure of the object cann't be modified, value of the properties can be changed.
+	isSealed() - Determines if an object is sealed.
+	preventExtensions() -new properties cann't be added to an object, properties can be deleted, value of the properties can be changed
+    isExtensible() - Determines if extending of an object is allowed
+	keys()	- Returns an array of keys
+	values() - Returns an array of values
+	entries() - returns an array of [key, value] pairs
+	fromEntries() - transforms an array/Map into an Object
+	groupBy(items, callbackFn) - groups the data, the callbackFn should return a groupName
+	
+	
+Method						Add Props		Delete Props		Modify Props
+================================================================================
+Object.freeze()				❌				❌					❌
+Object.seal()				❌				❌					✅
+Object.preventExtensions()	❌				✅					✅
+
+	
+
+-shallow copy : Object.assign()
+                obj2 = {...obj1}
+-deep cloning :  JSON.parse(JSON.stringify(obj))  
+				 obj2 = structuredClone(obj1)
+Note: structuredClone() cann't copy the functions from original object to copied object.
+
+-A shallow copy of an object is a copy whose nested properties share the same references.
+ (Nested objects will not be copied by value)
+-A deep copy of an object is a copy whose nested properties do not share the same references.
+
+
+-JSON.stringify()  converts object to string.
+-JSON.parse()      converts string to object.
+
+
+
+
+
+
+
+
+
+Dictionary
+==========
+-Dictionaries are used to store data values in key:value pairs.
+-Dictionary properties can be accessed by using 
+    1. []
+    2. get()
+-when we try to access a prop, which is not there using get(), it returns 'None'    
+-when we try to access a prop, which is not there using [], it throws KeyError   
+-Dictionary properties are case sensitive 
+-To determine how many items a dictionary has, use the len() 
+-The values in dictionary items can be of any data type
+-We can access the items of a dictionary by referring to its key name, inside square brackets
+ product = {"brand": "HP","model":"ProBook","year": 2021}
+ print(product["year"])
+-There is also a method called get() that gives the same result
+  print(product.get("year"))
+-To determine if a specified key is present in a dictionary use the in keyword
+-The pop() method removes the item with the specified key name    
+-clear() method empties the dictionary
+
+Method	Description
+=====================
+clear()	Removes all the elements from the dictionary
+copy()	Returns a copy of the dictionary
+fromkeys()	Returns a dictionary with the specified keys and value
+get()	Returns the value of the specified key
+items()	Returns a list containing a tuple for each key value pair
+keys()	Returns a list containing the dictionary's keys
+pop()	Removes the element with the specified key
+popitem()	Removes the last inserted key-value pair
+setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+update()	Updates the dictionary with the specified key-value pairs
+values()	Returns a list of all the values in the dictionary

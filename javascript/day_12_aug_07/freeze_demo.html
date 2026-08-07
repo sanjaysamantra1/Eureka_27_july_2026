@@ -1,0 +1,18 @@
+<script>
+    const user = { name: 'Virat', age: 35, add: 'mumbai' };
+    // even though 'const' is used, user is Mutable
+    user.name = 'Virat-123'; // update - yes
+    delete user.age;         // delete - yes
+    user.phone = "1122334455"; // add - yes
+    console.log('user: ', user)
+
+    const user2 = { name: 'Virat', age: 35, add: 'mumbai' };
+    Object.freeze(user2);
+    user2.name = 'Virat-123'; // update - No
+    delete user2.age;         // delete - No
+    user2.phone = "1122334455"; // add - No
+    console.log('user2: ', user2)
+
+    console.log('is the object frozen? ', Object.isFrozen(user))
+    console.log('is the object frozen? ', Object.isFrozen(user2))
+</script>
