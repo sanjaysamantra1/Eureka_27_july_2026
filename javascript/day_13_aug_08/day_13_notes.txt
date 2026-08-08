@@ -1,0 +1,70 @@
+OOP
+====
+Class:
+    -A class is a blueprint 
+    -No Physical existance
+
+Object:
+    -instance of a class
+    -Physical Existance
+
+
+
+-An Object bundles: 
+    Data (attributes/properties)
+    Behavior (methods/functions)
+
+
+-All classes have a built-in method called __init__(), which is always executed when the class is being initiated.     
+
+-class A: pass
+ pass means “do nothing.” define an empty class without raising a syntax error.
+
+-The __init__() method is used to assign values to object properties
+ "self"  refers to the current object(instance) of a class
+  Use self to access class properties
+  While we can use a different name, it is strongly recommended to use self as it is the convention 
+
+-Default Values in __init__() 
+ ex: def __init__(self, name, age=18):
+
+-Properties defined inside __init__() belong to each object (instance properties).
+ Properties defined outside methods belong to the class itself (class properties) and are shared by all objects:
+
+-we can make properties private by using a double underscore __ prefix
+ 
+
+-All methods must have self as the first parameter.
+ def greet(self):
+    print("Hello, my name is " + self.name)
+
+-method with parameters
+  def add(self, a, b):
+    return a + b    
+
+-The __str__() method is a special method that controls what is returned when the object is printed
+__str__() string representation of an obejct
+
+
+
+data hiding:
+-hiding the data outside the class
+-declare the variables private
+
+
+Encapsulation:
+Data Hiding + allow other objects to acces the data using member function
+
+
+Composition:
+    -One Object uses another object
+    has-a relationship
+    'Student' has an 'Address'
+
+
+
+4 pillars of OOP:
+    1. Encapsulation
+    2. Polymorphism
+    3. Inheritance
+    4. Abstraction

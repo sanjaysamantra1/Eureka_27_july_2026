@@ -1,0 +1,12 @@
+<script>
+    let str = 'Virat Kohli';
+    let arr = [10, 20];
+
+    function f1(a, b) {
+        a = "Sachin";   // Primitives : pass by value
+        b.push(30, 40); // Objects :  pass by reference
+        console.log('inside function ', a, b)
+    }
+    f1(str, arr);
+    console.log('outside function ', str, arr)
+</script>

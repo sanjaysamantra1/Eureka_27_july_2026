@@ -1,0 +1,28 @@
+<script>
+    class Student {
+        constructor(roll, name, course, passyear) {
+            this.roll = roll;
+            this.name = name;
+            this.course = course;
+            this.passyear = passyear;
+        }
+    }
+    Student.prototype.orgName = 'Eureka';  // Prototype / class-level property
+
+    let std1 = new Student(1, 'Manish', 'Python', 2025);
+    let std2 = new Student(2, 'Rajsekhar', 'React', 2026);
+
+    console.log(std1, std2)
+
+    console.log(std1.name, std1.orgName)
+    console.log(std2.name, std2.orgName)
+
+    std1.orgName = 'Eureka Infotech'
+    // is it updating the value of class level variable? NO
+    // in std1 a new property is added orgName = 'Eureka Infotech'
+
+    console.log(std1.name, std1.orgName)
+    console.log(std2.name, std2.orgName)
+
+    console.log(std1, std2)
+</script>
