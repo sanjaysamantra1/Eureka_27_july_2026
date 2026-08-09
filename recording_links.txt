@@ -49,3 +49,7 @@ Passcode: k9MnJ#1P
 day_13_aug_08:
 https://zoom.us/rec/share/rZOyQtF9dnd0js-eBQPn-Ac5rl-zTh5xJH7I44Tto3DiJQHVKnpiP5KkOrx9tYMF.-7MzDk4qrCZ-Zr2l 
 Passcode: *8J^4Kia
+
+day_14_aug_09:
+https://zoom.us/rec/share/8YtsD0qUpl8QxxRc6AvxpkYLw0LEMGSySzu2Rr3z4CLLuVl2Oi-3l5ynV1u5gEod.ciKy0M0cB31i1z86 
+Passcode: hg%?6EED

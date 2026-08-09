@@ -1,0 +1,9 @@
+<script>
+    // await is only valid in async functions 
+    async function fetchUsers() {
+        let response = await fetch('https://jsonplaceholder.typicode.com/users');
+        let finalResponse = await response.json();
+        console.log(finalResponse)
+    }
+    fetchUsers()
+</script>
