@@ -1,0 +1,17 @@
+<script>
+    function makeLaptop(brand, model, price) { // es_5
+        return {
+            brand: brand,
+            model: model,
+            price: price,
+        }
+    }
+    let laptop1 = makeLaptop('HP', 'ProBook', 40000)
+    console.log(laptop1)
+
+    function createLaptop(brand, model, price) { // es_6
+        return { brand, model, price }
+    }
+    let laptop2 = createLaptop('HP', 'ProBook', 40000)
+    console.log(laptop2)
+</script>
