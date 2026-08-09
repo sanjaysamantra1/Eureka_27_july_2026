@@ -1,0 +1,18 @@
+<script>
+    let max_num = Math.max(10, 20, 30, 40); // max() returns a value
+    console.log('max_num: ', max_num);
+
+    // fetch data from backend api: https://jsonplaceholder.typicode.com/users
+    let userPromise = fetch('https://jsonplaceholder.typicode.com/users');
+
+    userPromise.then(
+        (response) => {
+            response.json().then(finalResponse => {
+                console.log(finalResponse)
+            })
+        },
+        (error) => {
+            console.log(error)
+        },
+    )
+</script>

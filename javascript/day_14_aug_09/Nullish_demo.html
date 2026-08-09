@@ -1,0 +1,13 @@
+<script>
+    function test(a, b, c) {
+        b = b || 20; // if b is any false value than set b=20
+        c = c ?? 30; // if c is undefined/null than set c=30
+        console.log(a, b, c)
+    }
+    test(10); // 10  20   30
+    test(10, false, false);  // 10  20  false
+    test(10, 0, 0);  // 10  20  false
+
+
+    // 0 undefined null NaN ''      falsy values
+</script>
