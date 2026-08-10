@@ -58,3 +58,15 @@ Javascript Timers
 
 EventLoop
 =========
+CallStack : it executes the code , if 1 function calls another function the stack can have multiple functions
+Note: Only regular functions can go to callstack directly, callback functions has to wait in queue
+
+MicroTask Queue : Promise(), async functions
+MacroTask Queue : setTimeout(), setInterval()
+
+EventLoop : Keeps checking event loop
+            when callstack is free, eventloop assigns functions from queue to callstack for execution
+
+
+Js Visualizer
+https://www.jsv9000.app/

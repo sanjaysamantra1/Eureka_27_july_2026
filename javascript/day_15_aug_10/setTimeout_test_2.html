@@ -1,0 +1,27 @@
+<script>
+    // print 1 2 3 4 5 with 2 sec interval
+    /* for (var i = 1; i <= 5; i++) {
+        console.log('For Loop Executed...')
+        setTimeout(() => {
+            console.log('i value: ', i)
+        }, 2000 * i);
+    }
+    console.log('i value ouside for loop: ', i) */
+    // var is not block scoped variable
+    // how many i variables are created , ans=1
+    // what is the latest value of i, ans=6
+    // can we access i outside loop , ans=yes
+
+
+    for (let j = 1; j <= 5; j++) {
+        console.log('For Loop Executed...',j)
+        setTimeout(() => {
+            console.log('j value: ', j)
+        }, 2000 * j);
+    }
+    // console.log('j value ouside for loop: ', j)
+    // let is block scoped variable
+    // how many j variables are created , ans=5 , j=1  j=2 j=3 j=4 j=5
+    // what is the latest value of j, ans=5
+    // can we access j outside loop , ans=no
+</script>

@@ -1,0 +1,9 @@
+<script>
+    // print 1 2 3 4 5 with 2 sec interval
+    function printVal(val) {
+        console.log('Value: ', val)
+    }
+    for (var i = 1; i <= 5; i++) {
+        setTimeout(printVal, 2000*i, i);
+    }
+</script>

@@ -1,0 +1,24 @@
+<script>
+    function f1() {
+        console.log('I am f1...')
+    }
+    function f2() {
+        console.log('I am f2...')
+    }
+    function f3() {
+        console.log('I am f3...')
+    }
+    function f4() {
+        console.log('I am f4...')
+    }
+    function f5() {
+        console.log('I am f5...')
+    }
+    f1();
+    setTimeout(f2, 1000)
+    setTimeout(f3, 0)
+    Promise.resolve().then(f4);
+    f5();
+
+    // f1 f5 f4 f3 f2
+</script>
