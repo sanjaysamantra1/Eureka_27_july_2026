@@ -53,3 +53,7 @@ Passcode: *8J^4Kia
 day_14_aug_09:
 https://zoom.us/rec/share/8YtsD0qUpl8QxxRc6AvxpkYLw0LEMGSySzu2Rr3z4CLLuVl2Oi-3l5ynV1u5gEod.ciKy0M0cB31i1z86 
 Passcode: hg%?6EED
+
+day_15_aug_10:
+https://zoom.us/rec/share/Jop7y-UuW42YynrowwCJpoUQFK2cgg_FJLVHugmDWB9mcgbfNnhmbq_HA64X8Wko.e1l7o6ZiHjFHvUL4 
+Passcode: qpAm2p+K
