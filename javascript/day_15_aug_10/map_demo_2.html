@@ -1,0 +1,26 @@
+<script>
+    let str = 'ENTERTAINMENT';
+
+    // using Object
+    let resultObj = {};
+    for (char of str) {
+        if (resultObj[char]) {
+            resultObj[char] = resultObj[char] + 1;
+        } else {
+            resultObj[char] = 1;
+        }
+    }
+    console.log('resultObj:: ', resultObj)
+
+
+    // using Map
+    let resultMap = new Map();
+    for (char of str) {
+        if (resultMap.has(char)) {
+            resultMap.set(char, resultMap.get(char) + 1)
+        } else {
+            resultMap.set(char, 1)
+        }
+    }
+    console.log('resultMap:: ', resultMap)
+</script>

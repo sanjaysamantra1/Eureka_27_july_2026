@@ -1,0 +1,14 @@
+<script>
+    // setTimeout allows to run a function once, after a specified amount of time
+    function f1() {
+        console.log('I am f1...');
+    }
+    setTimeout(f1, 3000);
+
+    // call a function in setTimpoue with params
+    function add(a, b) {
+        console.log(`Addition of ${a} and ${b} is: ${a, b}`)
+    }
+    setTimeout(add(10, 20), 5000, 10, 20); // add() is called immediately
+    setTimeout(add, 5000, 10, 20);
+</script>

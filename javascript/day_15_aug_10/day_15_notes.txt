@@ -1,0 +1,60 @@
+Map
+====
+-Map is a collection
+-Stores data in Key:Value pair
+
+
+object vs map
+-------------
+1. object keys must be strings/symbol, where as map keys can be of any type.
+2. we can get the size of a Map easily.  ex: map.size
+   for object size has to be calculated manually. ex: Object.keys(obj).length
+3.The iteration of maps is in insertion order of the elements
+4.Objects are not inherently iterable (Object.keys() is slow), Maps are iterable.
+
+
+
+// create a new Map Object with initial value
+const userMap = new Map([['name', 'sanjay']]); // Entry 
+console.log(userMap);
+
+// Add/Update value
+userMap.set('age', 50); // Add
+userMap.set('address', 'Bangalore'); // Add
+userMap.set('role', 'Admin'); // Add
+userMap.set('role', 'Trainer'); // Update
+
+// Check Map Size
+console.log('Size: ', userMap.size);
+
+// Print the Map
+console.log(userMap);
+
+// Read 1 value
+console.log('Name: ', userMap.get('name')); // Sanjay
+
+// Iterate Map
+for (const [key, value] of userMap) {
+   console.log(`${key} ==== ${value}`);
+}
+
+// Remove an Entry
+userMap.delete('age');
+
+// Remove all entries
+userMap.clear();
+
+
+
+
+Javascript Timers
+=================
+-setTimeout() , clearTimeout() , setInterval(), clearInterval()
+-these methods are from 'window' object
+-setTimeout allows to run a function once, after a specified amount of time.
+-setInterval allows to run a function repeatedly after the specified interval of time.
+
+
+
+EventLoop
+=========

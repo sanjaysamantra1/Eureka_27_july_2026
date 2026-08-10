@@ -1,0 +1,12 @@
+<script>
+    // clear the interval after 5 sec
+    function f1() {
+        console.log('I am f1...');
+    }
+    const myInterval = setInterval(f1, 1000);
+
+    function stopPrinting() {
+        clearInterval(myInterval)
+    }
+    setTimeout(stopPrinting, 5000)
+</script>
