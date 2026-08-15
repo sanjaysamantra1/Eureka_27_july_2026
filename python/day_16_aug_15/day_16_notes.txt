@@ -12,4 +12,14 @@ Inheritance
 -Code Re-usability
  is-a Relationship
 
- 
+
+
+
+Polymorphism
+============
+-Same method can perform different actions depending on the object that calls it.
+
+Method Overloading : multiple methods with the same name but different parameters
+Constructor Overloading : multiple constructors with the same name but different parameters
+
+Method Overriding :  same method in both parent and child class
