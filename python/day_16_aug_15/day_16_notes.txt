@@ -1,0 +1,14 @@
+Encapsulation
+=============
+Encapsulation = Data Hiding  + allow acces to the data through member functions
+
+
+
+
+Inheritance
+============
+-allows one class to acquire properties & methods from another class.
+-Parent class , Child class
+-Code Re-usability
+ is-a Relationship
+ 
