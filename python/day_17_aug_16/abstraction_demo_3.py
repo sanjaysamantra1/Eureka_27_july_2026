@@ -9,7 +9,8 @@ class Notification(ABC):
     
 class EmailNotification(Notification):
     def send(self,message):
-        print(f"Sending email: {message}")
+        pass
+        # print(f"Sending email: {message}")
         
 class SMSNotification(Notification):
     def send(self,message):
