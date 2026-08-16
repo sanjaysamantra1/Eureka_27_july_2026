@@ -1,0 +1,10 @@
+Abstraction
+===========
+-hiding the internal implementation and exposing only the necessary things to the user
+-achieve abstraction abstract class
+-use abc module
+-Abstract class cannot be instantiated
+
+Concrete class : a class with out any abstract method / a class with all concrete methods
+Abstract class : a class with atleast 1 abstract method
+
