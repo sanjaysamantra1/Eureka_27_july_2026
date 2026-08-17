@@ -1,0 +1,58 @@
+Date Javascript
+===============
+    let dateObj = new Date();
+
+    console.log(dateObj.getDate())
+    console.log(dateObj.getMonth() + 1)
+    console.log(dateObj.getFullYear())
+
+    console.log(dateObj.getHours())
+    console.log(dateObj.getMinutes())
+    console.log(dateObj.getSeconds())
+
+
+
+Date Python
+============
+-The datetime module is the standard way to work with dates and times.
+
+-Key classes: date (year/month/day), time (hour/min/sec), datetime (both combined), timedelta (a duration/difference), timezone (UTC offsets).
+
+-Dates are immutable — every operation returns a new object rather than modifying in place.
+datetime.now() gives local time; datetime.utcnow() (deprecated in 3.12+) — use datetime.now(timezone.utc) instead for timezone-aware UTC.
+
+-Naive vs aware: a naive datetime has no timezone info; an aware one does. Mixing the two in comparisons raises errors — always be consistent.
+
+-Formatting uses strftime (datetime → string) and parsing uses strptime (string → datetime). Mnemonic: format, parse.
+
+-For real-world timezone handling, use the built-in zoneinfo module (3.9+) instead of pytz.
+
+-timedelta supports arithmetic directly — add/subtract it from dates, or subtract two dates to get a timedelta.
+
+
+
+Code	Meaning	Example
+%Y	4-digit year	2026
+%y	2-digit year	26
+%m	month (01-12)	08
+%B	full month name	August
+%b / %h	abbreviated month	Aug
+%d	day of month (01-31)	17
+%A	full weekday name	Monday
+%a	abbreviated weekday	Mon
+%H	hour, 24h (00-23)	14
+%I	hour, 12h (01-12)	02
+%p	AM/PM	PM
+%M	minute (00-59)	30
+%S	second (00-59)	00
+%f	microsecond	500000
+%z	UTC offset (aware only)	+0530
+%Z	timezone name (aware only)	UTC
+%j	day of year (001-366)	229
+%U	week of year, Sunday start	33
+%W	week of year, Monday start	33
+%w	weekday as number (0=Sunday)	1
+%c	full locale datetime	Mon Aug 17 14:30:00 2026
+%x	locale date	08/17/26
+%X	locale time	14:30:00
+%%	literal %	%
