@@ -1,0 +1,56 @@
+Exception Handling
+==================
+-An exception is an error that occurs during program execution, disrupting the normal flow. 
+  print(10 / 0)
+  
+-Python stops normal execution and looks for a handler.
+
+-Exception handling lets us anticipate and manage errors gracefully instead of letting the program crash.
+ 
+-Core keywords: try, except, else, finally, raise.
+    The try block lets us test a block of code for errors.
+    The except block lets us handle the error.
+    The else block lets us execute code when there is no error.
+    The finally block lets us execute code, regardless of the result of the try- and except blocks.
+    manually create an exception using raise
+
+
+    try
+    ↓
+    Run the code
+    ↓
+    Error?
+    ├── No  → Continue normally
+    │
+    └── Yes → Go to except
+
+-Python exceptions are objects — all built-in exceptions inherit from the base class BaseException, and most user-facing ones from Exception.
+
+-Common Exceptions:
+    ZeroDivisionError : print(10 / 0)
+    ValueError : age = int("abc")
+    TypeError : result = "10" + 5
+    KeyError : print(user["age"])
+    IndexError :  print(cars[10])
+    FileNotFoundError : file = open("data.txt", "r")
+
+-Python checks except blocks top to bottom.
+
+-More specific exceptions must be caught before general ones
+
+-we can define our own exception classes for domain-specific error handling.
+
+try:
+    # risky code
+except SpecificError:
+    # handle expected error
+except Exception as e:
+    # optionally log unexpected error
+    print(e)
+except:
+    #handle generic error
+else:
+    #Run some code when erro is not there
+finally:
+    # cleanup
+   
