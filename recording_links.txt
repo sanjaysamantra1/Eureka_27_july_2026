@@ -69,3 +69,7 @@ Passcode: 79Ci.s46
 day_18_aug_17:
 https://zoom.us/rec/share/RXpsIZAwr_6QEgZQl-d6vBTcRaNdsB393cycxTaBajVPHxRcxKoSrUAidzd0un8u.rHkhhP1Aj_UROi9p 
 Passcode: 01prGCz&
+
+day_19_aug_19:(angular-1)
+https://zoom.us/rec/share/FNQnqO4or3keulrF5ocvYiSmAqXNs3bwMTgzZxMbZBFbTj2kv7UlaKZLTrRO7F8q.lUkCQroCpBqOnsfY 
+Passcode: ZP#zSd6g
