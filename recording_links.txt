@@ -73,3 +73,8 @@ Passcode: 01prGCz&
 day_19_aug_19:(angular-1)
 https://zoom.us/rec/share/FNQnqO4or3keulrF5ocvYiSmAqXNs3bwMTgzZxMbZBFbTj2kv7UlaKZLTrRO7F8q.lUkCQroCpBqOnsfY 
 Passcode: ZP#zSd6g
+
+
+day_20_aug_20:(angular-2)
+https://zoom.us/rec/share/zKXG20TiGQBYnhxfkv2B6DY1Z-eLAmLmtUckehA3D6sXqoivVTRCt7Y_0FD_5BPi.7toUGfALaASL73vN 
+Passcode: vw$Ry2qE

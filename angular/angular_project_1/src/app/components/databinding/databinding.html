@@ -9,10 +9,12 @@
   <img bind-src="img_url" alt="" width="200" height="200" />
 
   <div class="my-2">
-    1 way: <input type="text" value="{{ userName }}" />
-    1 way: <input type="text" [value]="userName" class="mx-2" />
-    1 way: <input type="text" bind-value="userName" />
-    2 way: <input type="text" [(ngModel)]="userName" />
+    1 way: <input type="text" value="{{ userName }}" /> 1 way:
+    <input type="text" [value]="userName" class="mx-2" /> 1 way:
+    <input type="text" bind-value="userName" />
+    <br />
+    2 way: <input type="text" [(ngModel)]="userName" /> 2 way:
+    <input type="text" bindon-ngModel="userName" />
   </div>
   <div class="my-2">
     <button disabled="{{ flag }}" class="btn btn-primary">Click Me</button>
@@ -22,4 +24,31 @@
     <div>Flag value: {{ flag }}</div>
     <button (click)="toggleFlag()" class="btn btn-primary mx-2">Toggle Flag</button>
   </div>
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <div>Assignment-1:</div>
+  <div>
+    Have a paragraph and a toggle button; on clicking the button, control the visibility (Show /
+    Hide) of the paragraph.
+  </div>
+
+  <h2 [hidden]="flag">Helllo EveryOne, Good Morning</h2>
+  <button (click)="toggleFlag()">{{ flag ? 'SHOW' : 'HIDE' }}</button>
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <div>Assignment-2:</div>
+  <div>
+    Create a dropdown with state names; when the user changes the dropdown value, print the selected
+    value in a div.
+  </div>
+  <select>
+    <option>Karnataka</option>
+    <option>Andhra pradesh</option>
+    <option>Tamilnadu</option>
+    <option>Odisha</option>
+    <option>Maharastra</option>
+  </select>
+  <div>Selected State:</div>
 </div>
