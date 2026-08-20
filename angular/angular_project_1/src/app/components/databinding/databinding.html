@@ -1,0 +1,25 @@
+<h3 class="text-center">Let's Learn Data Binding</h3>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <div>userName is: {{ userName }}</div>
+  <div>userName is: <span [innerHTML]="userName"></span></div>
+
+  <img src="{{ img_url }}" alt="" width="200" height="200" />
+  <img [src]="img_url" alt="" width="200" height="200" />
+  <img bind-src="img_url" alt="" width="200" height="200" />
+
+  <div class="my-2">
+    1 way: <input type="text" value="{{ userName }}" />
+    1 way: <input type="text" [value]="userName" class="mx-2" />
+    1 way: <input type="text" bind-value="userName" />
+    2 way: <input type="text" [(ngModel)]="userName" />
+  </div>
+  <div class="my-2">
+    <button disabled="{{ flag }}" class="btn btn-primary">Click Me</button>
+    <button [disabled]="flag" class="btn btn-primary mx-2">Click Me</button>
+    <button bind-disabled="flag" class="btn btn-primary">Click Me</button>
+
+    <div>Flag value: {{ flag }}</div>
+    <button (click)="toggleFlag()" class="btn btn-primary mx-2">Toggle Flag</button>
+  </div>
+</div>
