@@ -3,9 +3,7 @@ import { Databinding } from '../databinding/databinding';
 
 @Component({
   selector: 'app-body',
-  imports: [
-    Databinding
-  ],
+  imports: [Databinding],
   templateUrl: './body.html',
   styleUrl: './body.css',
 })
