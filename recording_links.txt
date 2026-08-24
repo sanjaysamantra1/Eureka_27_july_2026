@@ -78,3 +78,7 @@ Passcode: ZP#zSd6g
 day_20_aug_20:(angular-2)
 https://zoom.us/rec/share/zKXG20TiGQBYnhxfkv2B6DY1Z-eLAmLmtUckehA3D6sXqoivVTRCt7Y_0FD_5BPi.7toUGfALaASL73vN 
 Passcode: vw$Ry2qE
+
+day_21_aug_24:(angular-3)
+https://zoom.us/rec/share/4FEKK-89kOaOy1NVdB4U0ps_i0qNpYJwIY5zI3QsIcuiuE5K2CcZ6zOEFuPgBOne.mLlI6yjnVN9LHt2E 
+Passcode: BZN.f$92
