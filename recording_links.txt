@@ -74,7 +74,6 @@ day_19_aug_19:(angular-1)
 https://zoom.us/rec/share/FNQnqO4or3keulrF5ocvYiSmAqXNs3bwMTgzZxMbZBFbTj2kv7UlaKZLTrRO7F8q.lUkCQroCpBqOnsfY 
 Passcode: ZP#zSd6g
 
-
 day_20_aug_20:(angular-2)
 https://zoom.us/rec/share/zKXG20TiGQBYnhxfkv2B6DY1Z-eLAmLmtUckehA3D6sXqoivVTRCt7Y_0FD_5BPi.7toUGfALaASL73vN 
 Passcode: vw$Ry2qE
@@ -82,3 +81,7 @@ Passcode: vw$Ry2qE
 day_21_aug_24:(angular-3)
 https://zoom.us/rec/share/4FEKK-89kOaOy1NVdB4U0ps_i0qNpYJwIY5zI3QsIcuiuE5K2CcZ6zOEFuPgBOne.mLlI6yjnVN9LHt2E 
 Passcode: BZN.f$92
+
+day_21_aug_24:(angular-4)
+https://zoom.us/rec/share/6g3ez3YQwiXhcL3oxbnQ6HWDeLtePcEI8ejWMtZjLUnpKPEf2f_rA8p2aSQ0sfVR.meQbe9CuF5JuLv6u 
+Passcode: yQ?12K$=
