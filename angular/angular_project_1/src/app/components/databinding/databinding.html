@@ -1,5 +1,7 @@
 <h3 class="text-center">Let's Learn Data Binding</h3>
 
+@let greeting = 'Hello, ' + userName;
+
 <div class="border border-2 rounded-2 p-2 m-2">
   <div>userName is: {{ userName }}</div>
   <div>userName is: <span [innerHTML]="userName"></span></div>
@@ -27,6 +29,21 @@
 </div>
 
 <div class="border border-2 rounded-2 p-2 m-2">
+  <h3>Attribute Binding</h3>
+
+  <input type="text" [attr.maxlength]="maximum_length" />
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <h3>Variables can be declared in HTML file also</h3>
+  <div>Helloo {{ userName }}</div>
+  <div>Helloo {{ userName }}</div>
+  <div>{{ greeting }}</div>
+  <div>{{ greeting }}</div>
+  <div>{{ greeting }}</div>
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
   <div>Assignment-1:</div>
   <div>
     Have a paragraph and a toggle button; on clicking the button, control the visibility (Show /
@@ -51,4 +68,20 @@
     <option>Maharastra</option>
   </select>
   <div>Selected State:</div>
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <h3>Add 2 numbers using 2-way binding::</h3>
+  <input type="number" [(ngModel)]="num1" />
+  <input type="number" [(ngModel)]="num2" />
+  <div>Addition of {{num1}} and {{num2}} is {{num1+num2}}</div>
+</div>
+
+<div class="border border-2 rounded-2 p-2 m-2">
+  <h3>Add 2 numbers using Template reference variable::</h3>
+  <input type="number" #myNum1 />
+  <input type="number" #myNum2 class="mx-2" />
+
+  <button (click)="addition(myNum1.value , myNum2.value)">Add</button>
+  <div>Addition of {{myNum1.value}} and {{myNum2.value}} is {{addResult}}</div>
 </div>
