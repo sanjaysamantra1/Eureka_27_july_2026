@@ -1,0 +1,61 @@
+<h3 class="text-center">Let's Learn Directives</h3>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>If Else</div>
+
+  <input type="number" [(ngModel)]="num" />
+  @if (num % 2 == 0) {
+    <div>{{ num }} is Even</div>
+  } @else {
+    <div>{{ num }} is Odd</div>
+  }
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>Switch Case:: </div>
+  @switch (num) {
+    @case (1) { <h1>Monday</h1> }
+    @case (2) { <h1>Tuesday</h1> }
+    @case (3) { <h1>Wednesday</h1> }
+    @case (4) { <h1>Thursday</h1> }
+    @case (5) { <h1>Friday</h1> }
+    @case (6) { <h1>Saturday</h1> }
+    @case (7) { <h1>Sunday</h1> }
+    @default { <h1>Not a Valid number</h1> }
+  }
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h3>Country List::</h3>
+  <ul>
+    @for (country of countries; track $index) {
+      <li>{{country}}</li>
+    }
+  </ul>
+
+  <h3>Country Dropdown::</h3>
+  <select>
+    @for (country of countries; track $index) {
+      <option>{{country}}</option>
+    }
+  </select>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+   <h3>Employee List::</h3>
+
+   <table class="table table-bordered">
+      <tbody>
+        @for (emp of employees; track $index) {
+          <tr>
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.role}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.status}}</td>
+          </tr>
+        }
+      </tbody>
+   </table>
+</div>
