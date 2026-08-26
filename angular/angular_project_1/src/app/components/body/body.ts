@@ -2,13 +2,15 @@ import { Component } from '@angular/core';
 import { Databinding } from '../databinding/databinding';
 import { DirectivesDemo } from '../directives-demo/directives-demo';
 import { TaskList } from '../task-list/task-list';
+import { ProductList } from '../product-list/product-list';
 
 @Component({
   selector: 'app-body',
   imports: [
     // Databinding,
-    // DirectivesDemo
-    TaskList
+    DirectivesDemo
+    // TaskList
+    // ProductList
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

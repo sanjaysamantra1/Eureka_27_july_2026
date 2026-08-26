@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-directives-demo',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './directives-demo.html',
   styleUrl: './directives-demo.css',
 })
@@ -20,4 +21,11 @@ export class DirectivesDemo {
         { id: 5, name: 'Karan Singh', role: 'Manager', salary: 52000, status: 'Active', gender: 'male' },
         { id: 6, name: 'Neha Gupta', role: 'Tester', salary: 72000, status: 'Active', gender: 'female' }
   ];
+
+  myStyle1 = { "color": "green", "backgroundColor": "red", "border": "3px dotted yellow" }
+  myStyle2 = { "color": "red", "backgroundColor": "blue", "border": "3px dotted yellow" }
+
+  myFunction(){
+    return this.num%2==0 ? this.myStyle1 : this.myStyle2
+  }
 }

@@ -59,3 +59,23 @@
       </tbody>
    </table>
 </div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>ngStyle is used to apply some style conditionally.</div>
+
+  <input type="number" [(ngModel)]="num">
+  <p [style.color]="num % 2 == 0 ? 'blue' : 'red'"> Add a style </p>
+  <p [style.fontSize.px]='num % 2 == 0 ? 24 : 36'> Add style with unit </p>
+  <p [style.background-color]=" num % 2 == 0?'green':'blue' "> Add style conditionally </p>
+  <p [ngStyle]="num % 2 == 0 ? myStyle1 : myStyle2"> NgStyle for multiple values </p>
+  <p [ngStyle]="myFunction()"> NgStyle for multiple values </p>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <div>ngClass is used to apply some css class conditionally.</div>
+
+  <input type="number" [(ngModel)]="num">
+  <button class="btn mx-2" [ngClass]="num%2==0? 'btn-success' : 'btn-danger'">
+    Class Binding example
+  </button>
+</div>
