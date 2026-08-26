@@ -1,0 +1,19 @@
+<h3 class="text-center">Task List</h3>
+
+<div class="border border-2 rounded-2 p-2 col-6">
+  <select [(ngModel)]="selection">
+    <option>All</option>
+    <option>Completed</option>
+    <option>Pending</option>
+  </select>
+  <div>Selection::{{selection}}</div>
+
+  @for (task of getFilteredTasks(); track $index) {
+    <div [style.text-decoration]="task.completed ? 'line-through' : 'none'">
+      <input type="checkbox" [(ngModel)]="task.completed" />
+      {{task.id}}  {{task.title}}  ({{task.completed}})
+    </div>
+  }
+
+  <div>{{pendingCount}} out of {{tasks.length}} Tasks are Pending</div>
+</div>
