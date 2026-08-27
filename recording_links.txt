@@ -85,3 +85,7 @@ Passcode: BZN.f$92
 day_21_aug_24:(angular-4)
 https://zoom.us/rec/share/6g3ez3YQwiXhcL3oxbnQ6HWDeLtePcEI8ejWMtZjLUnpKPEf2f_rA8p2aSQ0sfVR.meQbe9CuF5JuLv6u 
 Passcode: yQ?12K$=
+
+day_22_aug_26:(angular-5)
+https://zoom.us/rec/share/ckuaQthLTTS_0sb1XAOsaAinsObqMfbQ1kT0excY1qEJIeNnIMUg9Y1wSCSWUsaB.HYH5edcd7c1duTCo 
+Passcode: #@QUgie1
