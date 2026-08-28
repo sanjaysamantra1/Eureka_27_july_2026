@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 import Snackbar from 'awesome-snackbar';
 import { CharOnly } from '../../custom_directives/char-only';
 import { AlphaNumeric } from '../../custom_directives/alpha-numeric';
+import { DisableCopyPaste } from '../../custom_directives/disable-copy-paste';
 
 @Component({
   selector: 'app-products',
@@ -14,7 +15,8 @@ import { AlphaNumeric } from '../../custom_directives/alpha-numeric';
     FontAwesomeModule,
     NgxPaginationModule,
     CharOnly,
-    AlphaNumeric
+    AlphaNumeric,
+    DisableCopyPaste
   ],
   templateUrl: './products.html',
   styleUrl: './products.css',
