@@ -8,6 +8,8 @@ import Snackbar from 'awesome-snackbar';
 import { CharOnly } from '../../custom_directives/char-only';
 import { AlphaNumeric } from '../../custom_directives/alpha-numeric';
 import { DisableCopyPaste } from '../../custom_directives/disable-copy-paste';
+import { DisableRightClick } from '../../custom_directives/disable-right-click';
+import { Zoomout } from '../../custom_directives/zoomout';
 
 @Component({
   selector: 'app-products',
@@ -16,7 +18,9 @@ import { DisableCopyPaste } from '../../custom_directives/disable-copy-paste';
     NgxPaginationModule,
     CharOnly,
     AlphaNumeric,
-    DisableCopyPaste
+    DisableCopyPaste,
+    DisableRightClick,
+    Zoomout
   ],
   templateUrl: './products.html',
   styleUrl: './products.css',
