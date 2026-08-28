@@ -6,13 +6,15 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import Swal from 'sweetalert2';
 import Snackbar from 'awesome-snackbar';
 import { CharOnly } from '../../custom_directives/char-only';
+import { AlphaNumeric } from '../../custom_directives/alpha-numeric';
 
 @Component({
   selector: 'app-products',
   imports: [
     FontAwesomeModule,
     NgxPaginationModule,
-    CharOnly
+    CharOnly,
+    AlphaNumeric
   ],
   templateUrl: './products.html',
   styleUrl: './products.css',
