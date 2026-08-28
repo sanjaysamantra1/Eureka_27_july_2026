@@ -93,3 +93,7 @@ Passcode: #@QUgie1
 day_23_aug_27:(angular-6)
 https://zoom.us/rec/share/tsrkMk1ZodjHUJHVssUU8I9hMwzRR6m2wdG-JWZ8rHGBHe4ml4TjzXC8fjiI3Qyg.6vxCbop51otNGu-D 
 Passcode: gY^S6!Cm
+
+day_24_aug_28:(angular-7)
+https://zoom.us/rec/share/tp-y-LQA29hHg_F5WzdelLE7VWErRM4VpId06AoPOiIs_JVqbNdma-tr6eeCNqpc.H_pfm6lvlSWK0RxT 
+Passcode: a8z2s^*x
