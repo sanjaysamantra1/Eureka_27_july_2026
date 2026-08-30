@@ -97,3 +97,7 @@ Passcode: gY^S6!Cm
 day_24_aug_28:(angular-7)
 https://zoom.us/rec/share/tp-y-LQA29hHg_F5WzdelLE7VWErRM4VpId06AoPOiIs_JVqbNdma-tr6eeCNqpc.H_pfm6lvlSWK0RxT 
 Passcode: a8z2s^*x
+
+day_25_aug_29:(postgres database)
+https://zoom.us/rec/share/kw7Auy9pdkeexPwUZua_aS9ftWUlTXdi584r2mkCIlQQdDnHr6-Z8WQHzra9g66k.QFt4aQBS7jVG1wXN 
+Passcode: sD58jv?U

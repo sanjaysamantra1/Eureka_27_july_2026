@@ -5,6 +5,7 @@ import { TaskList } from '../task-list/task-list';
 import { ProductList } from '../product-list/product-list';
 import { MyModal } from '../my-modal/my-modal';
 import { Products } from '../products/products';
+import { PipesDemo } from '../pipes-demo/pipes-demo';
 
 @Component({
   selector: 'app-body',
@@ -14,7 +15,8 @@ import { Products } from '../products/products';
     // TaskList
     // ProductList
     // MyModal
-    Products
+    // Products
+    PipesDemo
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

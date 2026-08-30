@@ -1,0 +1,83 @@
+<h3 class="text-center">Let's Learn Pipes</h3>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h5>uppercase ,lowercase, titlecase pipe </h5>
+  <div>Name: {{userName}}</div>
+  <div>Name: {{userName | uppercase}}</div>
+  <div>Name: {{userName | lowercase}}</div>
+  <div>Name: {{userName | titlecase}}</div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h5>currency pipe:: </h5>
+  <div>Salary: {{salary}}</div>
+  <div>Salary: {{salary | currency }}</div>
+  <div>Salary: {{salary | currency: 'INR'}}</div>
+            <!-- input | pipeName : arguments-->
+  <div>Salary: {{salary | currency: '&euro;'}}</div>
+  <div>Salary: {{salary | currency: '&yen;'}}</div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h5>Date pipe:</h5>
+  <div>{{ dateObj | date }}</div>
+  <div>{{ dateObj | date :'short'}}</div> <!-- Short Date + Short Time -->
+  <div>{{ dateObj | date :'medium'}}</div> <!-- medium Date + medium Time -->
+  <div>{{ dateObj | date :'long'}}</div> <!-- long Date + long Time -->
+  <div>{{ dateObj | date :'full'}}</div> <!-- full Date + full Time -->
+  ==================
+  <div>{{ dateObj | date : 'shortDate' }}</div>
+  <div>{{ dateObj | date : 'mediumDate' }}</div>
+  <div>{{ dateObj | date : 'longDate' }}</div>
+  <div>{{ dateObj | date : 'fullDate' }}</div>
+  =================
+  <div>{{ dateObj | date : 'shortTime' }}</div>
+  <div>{{ dateObj | date : 'mediumTime' }}</div>
+  <div>{{ dateObj | date : 'longTime' }}</div>
+  <div>{{ dateObj | date : 'fullTime' }}</div>
+  ==============
+  <div>{{ dateObj | date : 'dd-MMM-yyyy' }}</div>
+  <div>{{ dateObj | date : 'hh:mm:ss a' }}</div>
+  <div>{{ dateObj | date: "fullTime":"UTC" }}</div>
+  <div>{{ dateObj | date: "fullTime":"IST" }}</div>
+  <div>{{ dateObj | date: "EEEE" }}</div> <!-- Weekday-->
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h5>Number & percent pipe:</h5>
+  <div> {{100000000 | number}} </div>
+  <div>{{ 12.111222333 | number: "3.2-5" }}</div>
+  <div>{{ 12.1 | number: "3.2-5" }}</div>
+  <div>{{ 0.5 | number:'3.2-5'}}</div>
+  -------------
+  <div>{{ 2.5 | percent}}</div>
+  <div>{{ 2.5 | percent:'2.2-5'}}</div>
+  <div>{{ 0.024 | percent}}</div>
+  <div>{{ 0.026 | percent}}</div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h5>json & keyvalue Pipe:</h5>
+  <div>{{user}}</div>
+  <div>{{user | json}}</div>
+
+  @for(entry of user | keyvalue ;track $index){
+  <h5>{{entry.key}}---{{entry.value}}</h5>
+  }
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h5>slice Pipe:</h5>
+  <div>{{cars | slice : 2 }}</div>
+  <div>{{cars | slice : 2 : 4}}</div>
+  <div>{{'Angular is a Framework' | slice : 0 : 7}}</div>
+  <div>{{'Angular is a Framework' | slice : 0 : -4}}</div>
+</div>
+
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h5>Custom Pipe: (remaining)</h5>
+  <textarea [(ngModel)]="msg"></textarea>
+  <div>Message: {{msg}}</div>
+  <div>Remaining Chars: {{msg | remaining}}</div>
+</div>
