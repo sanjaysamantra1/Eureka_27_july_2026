@@ -105,3 +105,7 @@ Passcode: sD58jv?U
 day_26_aug_30:(angular-8)
 https://zoom.us/rec/share/DObU_4uAv4u1W72DS-kiDAPHUnCvxL6ZKGsq5sRtm6hglvAS2Al8UZPcedzXu-U8.EndTJMDxQHdSvdV7 
 Passcode: G6V*X7j5
+
+day_27_aug_31:(angular-9)
+https://zoom.us/rec/share/Yu9TdGIofnoiEfS8nRRXwz0qq8QC74HpJ8sZ17GueR6FYtq6q6mLax43czXjXZA0.RUxfOZyn0ey-kPNN 
+Passcode: 6Gok&MB3
