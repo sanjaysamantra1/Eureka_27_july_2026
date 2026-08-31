@@ -103,3 +103,43 @@
   <div>input Number: {{creditCardNumber}}</div>
   <div>Ordinal Number: {{creditCardNumber | creditcard}}</div>
 </div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <pre>
+   3. create a custom pipe called 'age' which takes a date as input and returns the age in years.
+   input : 04-06-2020
+   output : 6 years old
+  </pre>
+  <input [(ngModel)]="dob" type="date">
+  <div>input Number: {{dob}}</div>
+  <div>Age: {{dob | age}} years</div>
+</div>
+
+<div class="border border-3 rounded-3 p-3 m-3">
+  <h4>Employee List</h4>
+  <input type="search" [(ngModel)]="searchText" />
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>EmpId</th>
+        <th>name</th>
+        <th>role</th>
+        <th>salary</th>
+        <th>gender</th>
+        <th>status</th>
+      </tr>
+    </thead>
+      <tbody>
+        @for (emp of employees |filter:searchText; track $index) {
+          <tr>
+            <td>{{emp.id}}</td>
+            <td>{{emp.name | salutation : emp.gender}}</td>
+            <td>{{emp.role}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.gender}}</td>
+            <td>{{emp.status}}</td>
+          </tr>
+        }
+      </tbody>
+   </table>
+</div>
