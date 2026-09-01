@@ -109,3 +109,7 @@ Passcode: G6V*X7j5
 day_27_aug_31:(angular-9)
 https://zoom.us/rec/share/Yu9TdGIofnoiEfS8nRRXwz0qq8QC74HpJ8sZ17GueR6FYtq6q6mLax43czXjXZA0.RUxfOZyn0ey-kPNN 
 Passcode: 6Gok&MB3
+
+day_28_sept_1:(angular-10)
+https://zoom.us/rec/share/bR16R24JuV9uqEH3G8YAJkpdFP98tHBDKIqeDKh0I5kUew1VE6DxeMK4RCEK5rvb.HLSLRgSKPz4codiQ 
+Passcode: mB=2BaRC
