@@ -13,4 +13,9 @@ import { Child2Demo } from '../child2-demo/child2-demo';
 })
 export class ParentDemo {
   a = 10;
+  location:string = '';
+  
+  receiveLocationData(location:string){
+    this.location = location;
+  }
 }

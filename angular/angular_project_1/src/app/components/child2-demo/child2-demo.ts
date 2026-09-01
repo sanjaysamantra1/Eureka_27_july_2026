@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './child2-demo.html',
   styleUrl: './child2-demo.css',
-  inputs:['aChild2']
+  inputs: ['aChild2', 'courseName'],
 })
 export class Child2Demo {
-  aChild2:any;
+  aChild2: any;
+  courseName: string | undefined;
 }
