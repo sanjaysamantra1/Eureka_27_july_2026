@@ -125,3 +125,7 @@ Passcode: dzH.SfG1
 day_30_sept_3: (angular-12)
 https://zoom.us/rec/share/eQVitKbK6bROsdfBUkk-2paWmSzEDcwByT2BVS1secR0rQpVF-CFj6FEmRNWAf9e.wkt9ObVwH9LbtyIy 
 Passcode: p^#HdX3h
+
+day_30_sept_3: (FastAPI-2)
+https://zoom.us/rec/share/WvjLXyj-YoWvuCyfR4E66b2LHgwWM5WtS_uRmyGBqU6P-iXXS0sJC_3e2GAELcWQ.5FFYbh1q7tL0p8bl 
+Passcode: 9.^9Gv6C
