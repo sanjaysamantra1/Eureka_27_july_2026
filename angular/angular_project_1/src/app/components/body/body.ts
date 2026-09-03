@@ -7,6 +7,7 @@ import { MyModal } from '../my-modal/my-modal';
 import { Products } from '../products/products';
 import { PipesDemo } from '../pipes-demo/pipes-demo';
 import { ParentDemo } from '../parent-demo/parent-demo';
+import { MathDemo1 } from '../math-demo1/math-demo1';
 
 @Component({
   selector: 'app-body',
@@ -18,7 +19,8 @@ import { ParentDemo } from '../parent-demo/parent-demo';
     // MyModal
     // Products
     // PipesDemo
-    ParentDemo
+    // ParentDemo
+    MathDemo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
