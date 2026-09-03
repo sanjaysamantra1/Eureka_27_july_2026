@@ -121,3 +121,7 @@ Passcode: suzRj+w7
 day_29_sept_2: (FastAPI-1)
 https://zoom.us/rec/share/-OcXVS9kph0LmhQKJDV7p6smMXl5U6fT-ZP9VU4B96jPTVlA5j8Znlb1fG930ZR5.wq1Aukk51Ki-Y5SW 
 Passcode: dzH.SfG1
+
+day_30_sept_3: (angular-12)
+https://zoom.us/rec/share/eQVitKbK6bROsdfBUkk-2paWmSzEDcwByT2BVS1secR0rQpVF-CFj6FEmRNWAf9e.wkt9ObVwH9LbtyIy 
+Passcode: p^#HdX3h

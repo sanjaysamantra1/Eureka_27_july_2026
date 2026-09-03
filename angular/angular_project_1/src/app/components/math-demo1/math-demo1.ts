@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MathService } from '../../services/math-service';
+import { LoggerService } from '../../services/logger-service';
 
 @Component({
   selector: 'app-math-demo1',
@@ -9,7 +10,8 @@ import { MathService } from '../../services/math-service';
 })
 export class MathDemo1 {
   // mathService = new MathService(); // Manual way of creating object
-  mathService = inject(MathService); 
+  mathService = inject(MathService);
+  logger = inject(LoggerService);
 
   ngOnInit() {
     console.log('ngOnInit from MathDemo1');

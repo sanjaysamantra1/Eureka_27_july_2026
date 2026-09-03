@@ -5,7 +5,7 @@ type logLevel = 'debug' | 'info' | 'warn' | 'error';
 @Service()
 export class LoggerService {
   private log(level: logLevel, message: string, data?: unknown): void {
-    const time = new Date().toISOString();
+    const time = new Date().toLocaleTimeString();
     console[level](`${time} ${message}`, data);
   }
   debug(message: string, data?: unknown): void {
