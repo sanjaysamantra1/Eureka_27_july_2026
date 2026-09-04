@@ -1,3 +1,4 @@
+import { HttpDemo1 } from './../http-demo1/http-demo1';
 import { Component } from '@angular/core';
 import { Databinding } from '../databinding/databinding';
 import { DirectivesDemo } from '../directives-demo/directives-demo';
@@ -20,7 +21,8 @@ import { MathDemo1 } from '../math-demo1/math-demo1';
     // Products
     // PipesDemo
     // ParentDemo
-    MathDemo1
+    // MathDemo1
+    HttpDemo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
