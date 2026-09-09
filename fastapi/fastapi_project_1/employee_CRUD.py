@@ -8,21 +8,29 @@ def getAllEmployees():
     return employees
 
 @app.get("/employees/{emp_id}")
-def getEmployeeById(employee_id:int):
+def getEmployeeById(emp_id:int):
     for employee in employees:
-        if employee["id"] == employee_id:
+        if employee["id"] == emp_id:
             return employee
     return {"message":"Employee Not Found"}
 
 @app.post("/employees")
-def createEmployee(newEmp: dict):
-    employees.append(newEmp)
-    return newEmp
+def addEmployee(employee:dict):
+    employees.append(employee)
+    return {"message":"Employee Added Successfully"}    
 
 @app.put("/employees/{emp_id}")
-def updateEmployee(employee_id:int, updated_emp: dict):
+def updateEmployee(emp_id:int, updated_employee:dict):
     for employee in employees:
-        if employee["id"] == employee_id:
-            employee.update(updated_emp)
-            return employee
+        if employee["id"] == emp_id:
+            employee.update(updated_employee)
+            return {"message":"Employee Updated Successfully"}
+    return {"message":"Employee Not Found"}
+
+@app.delete("/employees/{emp_id}")
+def deleteEmployee(emp_id:int):
+    for employee in employees:
+        if employee["id"] == emp_id:
+            employees.remove(employee)
+            return {"message":"Employee Deleted Successfully"}
     return {"message":"Employee Not Found"}

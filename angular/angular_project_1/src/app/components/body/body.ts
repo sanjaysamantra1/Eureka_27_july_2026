@@ -10,6 +10,7 @@ import { PipesDemo } from '../pipes-demo/pipes-demo';
 import { ParentDemo } from '../parent-demo/parent-demo';
 import { MathDemo1 } from '../math-demo1/math-demo1';
 import { ProductHttp } from '../product-http/product-http';
+import { CommentList } from '../comment-list/comment-list';
 
 @Component({
   selector: 'app-body',
@@ -24,7 +25,8 @@ import { ProductHttp } from '../product-http/product-http';
     // ParentDemo
     // MathDemo1
     // HttpDemo1
-    ProductHttp
+    // ProductHttp
+    CommentList
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
