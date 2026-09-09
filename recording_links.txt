@@ -133,3 +133,11 @@ Passcode: 9.^9Gv6C
 day_31_sept_4: (angular-13)
 https://zoom.us/rec/share/6KKodb9T4OC7NJdufX7g2AZaE4OmCMvWZq8PAZ1XBmMMVi4oDSH9M_thSJKZdX1Q.xUFG_U7vVt_m5XOo 
 Passcode: VyL8vr#F
+
+day_32_sept_8: (FastAPI-3)
+https://zoom.us/rec/share/UHIVgYv_KJovMblWdBLknSBU4CJzMgTj-lpipvjTNzd7qBaddwVMpNeokzyIXsQ2.tU-tr0fo3nI7u2i6 
+Passcode: UxK+Xae2
+
+day_33_sept_9: (angular-14)
+https://zoom.us/rec/share/zs22ePL-D5AQBnX-Hm3tyMoR1E4Ob14BmYAnB6pVhNHd075cmrhNEqyBgJxbWLAR.3CsTPkTeH-xJW2SU 
+Passcode: N6?nP!V@
