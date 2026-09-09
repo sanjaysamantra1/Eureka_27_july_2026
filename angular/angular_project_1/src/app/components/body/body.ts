@@ -11,6 +11,7 @@ import { ParentDemo } from '../parent-demo/parent-demo';
 import { MathDemo1 } from '../math-demo1/math-demo1';
 import { ProductHttp } from '../product-http/product-http';
 import { CommentList } from '../comment-list/comment-list';
+import { EmployeeListHttp } from '../employee-list-http/employee-list-http';
 
 @Component({
   selector: 'app-body',
@@ -26,7 +27,8 @@ import { CommentList } from '../comment-list/comment-list';
     // MathDemo1
     // HttpDemo1
     // ProductHttp
-    CommentList
+    // CommentList
+    EmployeeListHttp
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

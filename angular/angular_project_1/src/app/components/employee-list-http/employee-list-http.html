@@ -1,0 +1,16 @@
+<h3 class="text-center">Employee List</h3>
+
+<table class="table table-bordered">
+  <tbody>
+    @for (employee of employeeData | async; track $index) {
+      <tr>
+        <td>{{employee.firstName}}</td>
+        <td>{{employee.lastName}}</td>
+        <td>{{employee.gender}}</td>
+        <td>{{employee.sal}}</td>
+        <td>{{employee.getFullName()}}</td>
+        <td>{{employee.getYearlySalary()}}</td>
+      </tr>
+    }
+  </tbody>
+</table>
