@@ -141,3 +141,7 @@ Passcode: UxK+Xae2
 day_33_sept_9: (angular-14)
 https://zoom.us/rec/share/zs22ePL-D5AQBnX-Hm3tyMoR1E4Ob14BmYAnB6pVhNHd075cmrhNEqyBgJxbWLAR.3CsTPkTeH-xJW2SU 
 Passcode: N6?nP!V@
+
+day_33_sept_9: (FastAPI-4)
+https://zoom.us/rec/share/aX-0jXoi-UokFBbYSlmLpWiWHSrEdBqni6-q936QfOawff3jN17gUC-Uj3P4li5L.aAm-R1No5m659viT 
+Passcode: ^DzzP$44
