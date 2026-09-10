@@ -6,6 +6,6 @@ export class ProductService {
   httpClient = inject(HttpClient);
 
   getAllProducts() {
-    return this.httpClient.get('https://fakestoreapi.com/products');
+    return this.httpClient.get('https://fakestoreapi.com/roducts');
   }
 }

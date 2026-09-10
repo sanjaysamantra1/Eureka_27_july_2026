@@ -26,9 +26,9 @@ import { EmployeeListHttp } from '../employee-list-http/employee-list-http';
     // ParentDemo
     // MathDemo1
     // HttpDemo1
-    // ProductHttp
+    ProductHttp
     // CommentList
-    EmployeeListHttp
+    // EmployeeListHttp
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',

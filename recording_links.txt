@@ -145,3 +145,7 @@ Passcode: N6?nP!V@
 day_33_sept_9: (FastAPI-4)
 https://zoom.us/rec/share/aX-0jXoi-UokFBbYSlmLpWiWHSrEdBqni6-q936QfOawff3jN17gUC-Uj3P4li5L.aAm-R1No5m659viT 
 Passcode: ^DzzP$44
+
+day_34_sept_10: (angular-15)
+https://zoom.us/rec/share/8gPHx0stq0JXkTtEtRW2XlT5LDFOd6bxaOcuSqm4lXTt2ZVmoI-EGirdxFzO-Q73.SE92luiIjdKKVGhI 
+Passcode: J&K4Qmh+
