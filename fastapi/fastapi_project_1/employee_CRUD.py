@@ -1,11 +1,24 @@
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI, Request
 from data.employee_data import employees
 
 app = FastAPI()
 
+
+@app.middleware("http")
+async def log_request(request: Request, call_next):
+    print(f"logger middleware... {request.method} {request.url}")
+    response = await call_next(request)
+    print(f" logger middleware... Status: {response.status_code}")
+    return response
+
+def sayHI():
+    return "Hiiii-User - Sanjay"  # common logic needed by multiple routes
+
+
 @app.get("/employees")
-def getAllEmployees():
-    return employees
+def getAllEmployees(msg=Depends(sayHI)):
+    print('getAllEmployees Route called....')
+    return {"employees":employees,"message":msg}
 
 @app.get("/employees/{emp_id}")
 def getEmployeeById(emp_id:int):

@@ -1,4 +1,5 @@
-from fastapi import APIRouter, status
+from fastapi import APIRouter, Cookie, Depends, Form, Header, Request, Response, status
+from typing import Annotated
 
 from schemas.employee_schema import (
     EmployeeCreate,
@@ -17,10 +18,33 @@ router = APIRouter(
     prefix="/employees",
     tags=["Employees"]
 )
+ 
+
+@router.post("/login")
+def login(username: str = Form(), password: str = Form()):
+    return {"username": username, "password": password}
+
+@router.get("/getCookies") 
+def read_all_cookies(request:Request):
+    return {
+        "message" : "you are on /getCookies Route",
+        "method" : request.method,
+        "url" : request.url,
+        "Cookies" : request.cookies,
+    }
 
 
 @router.get("/", response_model=list[EmployeeResponse])
-def get_employees():
+def get_employees(
+    response: Response,
+    authorization: str | None = Header(default=None),
+    x_request_id: str | None = Header(default=None),
+    session_id: Annotated[str | None, Cookie()] = None,
+):
+    # Response headers sent back to the client
+    response.headers["X-Response-ID"] = "response-123"
+    response.headers["X-Custom-Header"] = "hello"
+    print("cookie: ",session_id)
     return list_employees()
 
 
