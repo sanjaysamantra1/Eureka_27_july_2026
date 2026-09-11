@@ -12,6 +12,8 @@ import { MathDemo1 } from '../math-demo1/math-demo1';
 import { ProductHttp } from '../product-http/product-http';
 import { CommentList } from '../comment-list/comment-list';
 import { EmployeeListHttp } from '../employee-list-http/employee-list-http';
+import { ObservableDemo1 } from '../observable-demo1/observable-demo1';
+import { ObservableDemo2 } from '../observable-demo2/observable-demo2';
 
 @Component({
   selector: 'app-body',
@@ -26,11 +28,14 @@ import { EmployeeListHttp } from '../employee-list-http/employee-list-http';
     // ParentDemo
     // MathDemo1
     // HttpDemo1
-    ProductHttp
+    // ProductHttp
     // CommentList
     // EmployeeListHttp
+    // ObservableDemo1
+    ObservableDemo2
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
 })
 export class Body {}
+

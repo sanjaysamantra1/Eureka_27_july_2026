@@ -153,3 +153,7 @@ Passcode: J&K4Qmh+
 day_34_sept_10: (FastAPI-5)
 https://zoom.us/rec/share/Ebwvbunm1_NEDvQKbGmxxT4OEuNaDxMRSkV4mFzpiK48LF5EsbN8UH1xT6lfQNRj.SJNmru4pfrgqoEXv 
 Passcode: @..84XY8
+
+day_35_sept_11: (angular-16)
+https://zoom.us/rec/share/ofAcFtP4V2_KHNLLiW4uQL9dnOr2b-6T_mFCWigaRAocpPCdOLfdQ8UBKCFigWk6.I8vo9QfM6G8hOAcc 
+Passcode: WtIM*42^
