@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { forkJoin } from 'rxjs';
+import { concatMap, forkJoin, mergeMap, of } from 'rxjs';
 
 @Component({
   selector: 'app-observable-demo2',
@@ -10,9 +10,11 @@ import { forkJoin } from 'rxjs';
 })
 export class ObservableDemo2 {
   httpClient = inject(HttpClient);
-  
+
   ngOnInit() {
-    this.forkjoin_demo();
+    // this.forkjoin_demo();
+    // this.mergemap_demo();
+    this.concatMap_demo();
   }
 
   forkjoin_demo() {
@@ -22,6 +24,26 @@ export class ObservableDemo2 {
     });
     forkJoin(requests).subscribe((responses) => {
       console.log(responses);
+    });
+  }
+
+  mergemap_demo() {
+    let userIds = of(1,2,3,4);
+
+    userIds.pipe(mergeMap(userId => {
+      return this.httpClient.get(`https://fakestoreapi.com/carts/${userId}`)
+    })).subscribe(cartResponse => {
+      console.log(cartResponse)
+    });
+  }
+
+  concatMap_demo() {
+    let userIds = of(1,2,3,4);
+
+    userIds.pipe(concatMap(userId => {
+      return this.httpClient.get(`https://fakestoreapi.com/carts/${userId}`)
+    })).subscribe(cartResponse => {
+      console.log(cartResponse)
     });
   }
 }
