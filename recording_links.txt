@@ -157,3 +157,7 @@ Passcode: @..84XY8
 day_35_sept_11: (angular-16)
 https://zoom.us/rec/share/ofAcFtP4V2_KHNLLiW4uQL9dnOr2b-6T_mFCWigaRAocpPCdOLfdQ8UBKCFigWk6.I8vo9QfM6G8hOAcc 
 Passcode: WtIM*42^
+
+day_36_sept_15: (angular-17)
+https://zoom.us/rec/share/2VbxPxJt6BHmahyYMzNSnirAR-Dz9r3g3pnR4qnHB22d6A6xNhrL2sMCwKYbKun8.ki1pMbXgJAPDshCd 
+Passcode: E5bVT?8u
