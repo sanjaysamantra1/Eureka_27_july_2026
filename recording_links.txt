@@ -161,3 +161,17 @@ Passcode: WtIM*42^
 day_36_sept_15: (angular-17)
 https://zoom.us/rec/share/2VbxPxJt6BHmahyYMzNSnirAR-Dz9r3g3pnR4qnHB22d6A6xNhrL2sMCwKYbKun8.ki1pMbXgJAPDshCd 
 Passcode: E5bVT?8u
+
+day_36_sept_15: (Fastapi)
+https://zoom.us/rec/share/gVIGkVkF_zokNQ_iOsFPtEMTmBXn1ZydJL3bZKTr8YJTqLhMyL889QpPWzuL8Ovk.kQ2JWXgJBgfXy4kE 
+Passcode: Yr#B4=$k
+
+day_37_sept_16: (angular-18)
+https://zoom.us/rec/share/YJ7vYZlXnsq3bootdDcUiwPFAR0nDkJBETA5erGTa8jtughCAHZYejQ4FLv6u6M5.F-eYRduTqhacvImb 
+Passcode: fTUd&7S8
+
+day_37_sept_16: (Fastapi)
+https://zoom.us/rec/share/N8V9q93sjngQZ_1wJPf7c6bgAmiff7XX0vdYqFHQgK9Je8I_5VtxDvfNWJVsC9wd.OPJ7AKUfWdGiRqQV 
+Passcode: %b7pnNDs
+
+
