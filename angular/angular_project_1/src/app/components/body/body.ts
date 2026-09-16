@@ -18,6 +18,7 @@ import { ObservableDemo3 } from '../observable-demo3/observable-demo3';
 import { SubjectDemo1 } from '../subject-demo1/subject-demo1';
 import { TodoList } from '../todo-list/todo-list';
 import { TodoAdd } from '../todo-add/todo-add';
+import { SignalDemo1 } from '../signal-demo1/signal-demo1';
 
 @Component({
   selector: 'app-body',
@@ -39,7 +40,8 @@ import { TodoAdd } from '../todo-add/todo-add';
     // ObservableDemo2
     // ObservableDemo3
     // SubjectDemo1
-    TodoList,TodoAdd,
+    // TodoList,TodoAdd,
+    SignalDemo1
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
