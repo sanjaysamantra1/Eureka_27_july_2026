@@ -11,39 +11,44 @@ async def log_request(request: Request, call_next):
     print(f" logger middleware... Status: {response.status_code}")
     return response
 
+
 def sayHI():
     return "Hiiii-User - Sanjay"  # common logic needed by multiple routes
 
 
 @app.get("/employees")
 def getAllEmployees(msg=Depends(sayHI)):
-    print('getAllEmployees Route called....')
-    return {"employees":employees,"message":msg}
+    print("getAllEmployees Route called....")
+    return {"employees": employees, "message": msg}
+
 
 @app.get("/employees/{emp_id}")
-def getEmployeeById(emp_id:int):
+def getEmployeeById(emp_id: int):
     for employee in employees:
         if employee["id"] == emp_id:
             return employee
-    return {"message":"Employee Not Found"}
+    return {"message": "Employee Not Found"}
+
 
 @app.post("/employees")
-def addEmployee(employee:dict):
+def addEmployee(employee: dict):
     employees.append(employee)
-    return {"message":"Employee Added Successfully"}    
+    return {"message": "Employee Added Successfully"}
+
 
 @app.put("/employees/{emp_id}")
-def updateEmployee(emp_id:int, updated_employee:dict):
+def updateEmployee(emp_id: int, updated_employee: dict):
     for employee in employees:
         if employee["id"] == emp_id:
             employee.update(updated_employee)
-            return {"message":"Employee Updated Successfully"}
-    return {"message":"Employee Not Found"}
+            return {"message": "Employee Updated Successfully"}
+    return {"message": "Employee Not Found"}
+
 
 @app.delete("/employees/{emp_id}")
-def deleteEmployee(emp_id:int):
+def deleteEmployee(emp_id: int):
     for employee in employees:
         if employee["id"] == emp_id:
             employees.remove(employee)
-            return {"message":"Employee Deleted Successfully"}
-    return {"message":"Employee Not Found"}
+            return {"message": "Employee Deleted Successfully"}
+    return {"message": "Employee Not Found"}

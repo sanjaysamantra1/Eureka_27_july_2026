@@ -1,36 +1,31 @@
 from fastapi import APIRouter, Cookie, Depends, Form, Header, Request, Response, status
 from typing import Annotated
 
-from schemas.employee_schema import (
-    EmployeeCreate,
-    EmployeeResponse
-)
+from schemas.employee_schema import EmployeeCreate, EmployeeResponse
 
 from controllers.employee_controller import (
     list_employees,
     find_employee,
     add_employee,
     edit_employee,
-    remove_employee
+    remove_employee,
 )
 
-router = APIRouter(
-    prefix="/employees",
-    tags=["Employees"]
-)
- 
+router = APIRouter(prefix="/employees", tags=["Employees"])
+
 
 @router.post("/login")
 def login(username: str = Form(), password: str = Form()):
     return {"username": username, "password": password}
 
-@router.get("/getCookies") 
-def read_all_cookies(request:Request):
+
+@router.get("/getCookies")
+def read_all_cookies(request: Request):
     return {
-        "message" : "you are on /getCookies Route",
-        "method" : request.method,
-        "url" : request.url,
-        "Cookies" : request.cookies,
+        "message": "you are on /getCookies Route",
+        "method": request.method,
+        "url": request.url,
+        "Cookies": request.cookies,
     }
 
 
@@ -44,7 +39,7 @@ def get_employees(
     # Response headers sent back to the client
     response.headers["X-Response-ID"] = "response-123"
     response.headers["X-Custom-Header"] = "hello"
-    print("cookie: ",session_id)
+    print("cookie: ", session_id)
     return list_employees()
 
 
@@ -53,23 +48,13 @@ def get_employee(employee_id: int):
     return find_employee(employee_id)
 
 
-@router.post(
-    "/",
-    response_model=EmployeeResponse,
-    status_code=status.HTTP_201_CREATED
-)
+@router.post("/", response_model=EmployeeResponse, status_code=status.HTTP_201_CREATED)
 def create_employee(employee: EmployeeCreate):
     return add_employee(employee)
 
 
-@router.put(
-    "/{employee_id}",
-    response_model=EmployeeResponse
-)
-def update_employee(
-    employee_id: int,
-    employee: EmployeeCreate
-):
+@router.put("/{employee_id}", response_model=EmployeeResponse)
+def update_employee(employee_id: int, employee: EmployeeCreate):
     return edit_employee(employee_id, employee)
 
 
