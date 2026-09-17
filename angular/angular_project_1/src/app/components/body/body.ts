@@ -1,3 +1,4 @@
+import { FormDemo1 } from './../form-demo1/form-demo1';
 import { HttpDemo1 } from './../http-demo1/http-demo1';
 import { Component } from '@angular/core';
 import { Databinding } from '../databinding/databinding';
@@ -20,6 +21,7 @@ import { TodoList } from '../todo-list/todo-list';
 import { TodoAdd } from '../todo-add/todo-add';
 import { SignalDemo1 } from '../signal-demo1/signal-demo1';
 import { SignalDemo2 } from '../signal-demo2/signal-demo2';
+import { TemplateForm } from '../template-form/template-form';
 
 @Component({
   selector: 'app-body',
@@ -43,7 +45,9 @@ import { SignalDemo2 } from '../signal-demo2/signal-demo2';
     // SubjectDemo1
     // TodoList,TodoAdd,
     // SignalDemo1
-    SignalDemo2
+    // SignalDemo2
+    // FormDemo1
+    TemplateForm
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
