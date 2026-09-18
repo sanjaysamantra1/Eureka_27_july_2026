@@ -174,4 +174,17 @@ day_37_sept_16: (Fastapi)
 https://zoom.us/rec/share/N8V9q93sjngQZ_1wJPf7c6bgAmiff7XX0vdYqFHQgK9Je8I_5VtxDvfNWJVsC9wd.OPJ7AKUfWdGiRqQV 
 Passcode: %b7pnNDs
 
+day_38_sept_17: (angular-19)
+https://zoom.us/rec/share/8T6h5HazMejyUOkRlAcgSXqJdO5D8IqvfNDDh12uI5nLKVGMVZkm5nQL8Mar1HRr.GE7COy9v6AbrWbQx 
+Passcode: UuEd5?S=
+
+day_38_sept_17: (Fastapi)
+https://zoom.us/rec/share/BVp7Ng2cdt1Pt0XBdMz4jxR8YAxvKX0l7JXuTxfYpzmN2nHHhGtTdM39acT_OEwD.gpzeBwYKOhzBA_Th 
+Passcode: %rH9R16q
+
+day_39_sept_18: (angular)
+https://zoom.us/rec/share/Zg18I5BqBb5NUMV4ikkCg459rLSA2VJScMj3JCZyFa5RMZ-eIoz66Bs8K8jSO1R0.jlirU296BFd7uDWk 
+Passcode: b%c=S95J
+
+
 
