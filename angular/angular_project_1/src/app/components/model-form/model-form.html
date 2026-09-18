@@ -1,0 +1,55 @@
+<h3 class="text-center">Model Driven Form</h3>
+
+<div class="border border-3 rounded-3 p-3 col-sm-4 offset-4">
+  <form [formGroup]="registerForm" (submit)="submitMyForm()">
+    <p>
+      FirstName:
+      <input formControlName="firstName">
+      @if (registerForm.controls['firstName'].hasError('required')) {
+        <div class="text-danger">FirstName is Required</div>
+      }
+      @if (registerForm.controls['firstName'].hasError('minlength')) {
+        <div class="text-danger">FirstName should have minimum 5 chars</div>
+      }
+    </p>
+    <p>
+      LastName:
+      <input formControlName="lastName">
+      @if (registerForm.controls['lastName'].hasError('required')) {
+        <div class="text-danger">lastName is Required</div>
+      }
+      @if (registerForm.controls['lastName'].hasError('minlength')) {
+        <div class="text-danger">lastName should have minimum 5 chars</div>
+      }
+    </p>
+    <p>
+      email:
+      <input formControlName="email">
+      @if (registerForm.controls['email'].hasError('required')) {
+        <div class="text-danger">email is Required</div>
+      }
+      @if (registerForm.controls['email'].hasError('email')) {
+        <div class="text-danger">email Format is wrong</div>
+      }
+    </p>
+    <div formGroupName="address">
+      <p>
+        street:
+        <input formControlName="street">
+      </p>
+      <p>
+        city:
+        <input formControlName="city">
+      </p>
+      <p>
+        pincode:
+        <input formControlName="pincode">
+      </p>
+    </div>
+
+    <input type="submit" value="Submit" [disabled]="registerForm.invalid" />
+    <input type="reset" value="Reset" class="mx-2" />
+  </form>
+
+  <pre>{{registerForm.value | json}}</pre>
+</div>

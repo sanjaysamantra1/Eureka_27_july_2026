@@ -1,3 +1,4 @@
+import { ModelForm } from './../model-form/model-form';
 import { FormDemo1 } from './../form-demo1/form-demo1';
 import { HttpDemo1 } from './../http-demo1/http-demo1';
 import { Component } from '@angular/core';
@@ -47,7 +48,8 @@ import { TemplateForm } from '../template-form/template-form';
     // SignalDemo1
     // SignalDemo2
     // FormDemo1
-    TemplateForm
+    // TemplateForm
+    ModelForm
   ],
   templateUrl: './body.html',
   styleUrl: './body.css',
