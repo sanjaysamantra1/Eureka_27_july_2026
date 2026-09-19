@@ -194,5 +194,9 @@ day_40_sept_19: (angular)
 https://zoom.us/rec/share/klrDy9ZEBY8vYkVZDpovU9A_W072PHSTJvc7DbZLQS04EeJD0iYG0c9B4rNLQq_X.os2CfMRG1MlDzZdW 
 Passcode: .0Sy2W=i
 
+day_40_sept_19: (fastapi)
+https://zoom.us/rec/share/GuYUawJMwmaA1tDUYpRqaLTB_xZeAMyBLT_uXD39VwXact_11akYc-GTPJCSkPYj.QpBrQSm1JCMdaOG6 
+Passcode: q=1DYzeG
+
 
 

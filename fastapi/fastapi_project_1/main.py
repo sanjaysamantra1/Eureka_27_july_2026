@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from routes.employee_routes import router as employee_router
 from routes.user_routes import router as user_router
 from routes.auth_routes import router as auth_router
+from routes.product_routes import router as product_router
 from fastapi.middleware.cors import CORSMiddleware
 from db.base import create_tables
 
@@ -23,6 +24,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.include_router(employee_router) # register the Routes
-app.include_router(auth_router) # register the Routes
-app.include_router(user_router) # register the Routes
+app.include_router(employee_router) # register employee_router
+app.include_router(auth_router) # register auth_router
+app.include_router(user_router) # register user_router
+app.include_router(product_router) # register the product_router
