@@ -1,0 +1,28 @@
+<h3 class="text-center">Login</h3>
+
+<div class="col-sm-4 offset-4 border border-3 rounded-3 p-3 mt-2">
+  <form>
+    <p>
+      Email:
+      <input type="email" [formField]="loginForm.email" />
+      @if (loginForm.email().touched() && loginForm.email().invalid()) {
+        <ul>
+          @for (error of loginForm.email().errors(); track error) {
+            <li>{{ error.message }}</li>
+          }
+        </ul>
+      }
+    </p>
+    <p>
+      Password:
+      <input type="password" [formField]="loginForm.password" />
+    </p>
+
+    <input type="submit" value="Login" />
+  </form>
+
+  <pre>
+    Email: {{loginForm.email().value()}}
+    Password: {{loginForm.password().value()}}
+  </pre>
+</div>
