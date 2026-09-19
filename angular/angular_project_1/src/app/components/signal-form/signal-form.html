@@ -1,28 +1,23 @@
-<h3 class="text-center">Login</h3>
+<h3 class="text-center">Signal Form</h3>
 
-<div class="col-sm-4 offset-4 border border-3 rounded-3 p-3 mt-2">
-  <form>
-    <p>
-      Email:
-      <input type="email" [formField]="loginForm.email" />
-      @if (loginForm.email().touched() && loginForm.email().invalid()) {
-        <ul>
-          @for (error of loginForm.email().errors(); track error) {
-            <li>{{ error.message }}</li>
-          }
-        </ul>
+<div class="col-sm-6 offset-3 border border-3 rounded-3 p-3">
+  <form (submit)="submit(); $event.preventDefault()">
+    <p>Email: <input type="email" class="form-control" [formField]="loginForm.email" /></p>
+    <p>Password: <input type="password" class="form-control" [formField]="loginForm.password" /></p>
+    <p>Confirm Password:
+      <input type="password" class="form-control" [formField]="loginForm.confirmPassword" />
+    </p>
+    @if (loginForm.confirmPassword().invalid()) {
+      @for (error of loginForm.confirmPassword().errors(); track error) {
+        <div class="text-danger">{{ error.message }}</div>
       }
-    </p>
-    <p>
-      Password:
-      <input type="password" [formField]="loginForm.password" />
-    </p>
-
-    <input type="submit" value="Login" />
+    }
+    <button type="submit" class="btn btn-primary me-2" [disabled]="loginForm().invalid()">Submit</button>
+    <button type="button" class="btn btn-secondary" (click)="reset()">Reset</button>
   </form>
-
-  <pre>
-    Email: {{loginForm.email().value()}}
-    Password: {{loginForm.password().value()}}
-  </pre>
+  <hr />
+  <h5>Form Data</h5>
+  <div>Email: {{ loginForm.email().value() }}</div>
+  <div>Password: {{ loginForm.password().value() }}</div>
+  <div>Confirm Password: {{ loginForm.confirmPassword().value() }}</div>
 </div>

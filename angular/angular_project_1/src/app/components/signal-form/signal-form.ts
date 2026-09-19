@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { email, form,FormField, minLength, required } from '@angular/forms/signals';
+import { email, form, FormField, minLength, required, validate } from '@angular/forms/signals';
 
 @Component({
   selector: 'app-signal-form',
@@ -8,11 +8,25 @@ import { email, form,FormField, minLength, required } from '@angular/forms/signa
   styleUrl: './signal-form.css',
 })
 export class SignalForm {
-  loginModel = signal({ email: '', password: '' }); // data model
+  loginModel = signal({ email: '', password: '', confirmPassword: '' });
 
-  loginForm = form(this.loginModel,(schema) => {
+  loginForm = form(this.loginModel, (schema) => {
     required(schema.email, { message: 'Email is required' });
-    email(schema.email, { message: 'Email Format is not correct' });
-    minLength(schema.email, 5, { message: 'Email Should have minimum 5 chars' });
-  }); // form
+    email(schema.email, { message: 'Invalid email' });
+    required(schema.password, { message: 'Password is required' });
+    required(schema.confirmPassword, { message: 'Confirm password is required' });
+    validate(schema.confirmPassword, ({ value, valueOf }) =>
+      value() !== valueOf(schema.password)
+        ? { kind: 'mismatch', message: 'Passwords do not match' }
+        : null,
+    );
+  });
+  submit() {
+    if (this.loginForm().valid()) {
+      console.log(this.loginModel());
+    }
+  }
+  reset() {
+    this.loginModel.set({ email: '', password: '', confirmPassword: '' });
+  }
 }
