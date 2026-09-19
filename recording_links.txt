@@ -186,5 +186,13 @@ day_39_sept_18: (angular)
 https://zoom.us/rec/share/Zg18I5BqBb5NUMV4ikkCg459rLSA2VJScMj3JCZyFa5RMZ-eIoz66Bs8K8jSO1R0.jlirU296BFd7uDWk 
 Passcode: b%c=S95J
 
+day_39_sept_18: (fastapi)
+https://zoom.us/rec/share/TTYQxkZ8oFiRGHpLkDJE3SaH4T5wFjc5wKpnJKzJMEESTx18F_iIZqNPHcbDLFu-.F9Dz5JxS6XlFyAkk 
+Passcode: eY=*#123
+
+day_40_sept_19: (angular)
+https://zoom.us/rec/share/klrDy9ZEBY8vYkVZDpovU9A_W072PHSTJvc7DbZLQS04EeJD0iYG0c9B4rNLQq_X.os2CfMRG1MlDzZdW 
+Passcode: .0Sy2W=i
+
 
 
