@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import product_data from './product_data';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
-  imports: [FormsModule],
+  imports: [FormsModule,RouterLink],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css',
 })

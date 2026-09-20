@@ -11,7 +11,7 @@
         <p class="card-text text-truncate">{{user.email }}</p>
         <p class="card-text">{{user.phone }}</p>
         <p class="card-text">{{user.address.city }})</p>
-        <a href="#" class="btn btn-primary">Details</a>
+        <button class="btn btn-primary" [routerLink]="['/userdetails',user.id]">Details</button>
       </div>
     </div>
     }
