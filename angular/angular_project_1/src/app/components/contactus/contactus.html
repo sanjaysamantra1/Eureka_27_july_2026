@@ -1,1 +1,45 @@
 <h3 class="text-center">This is Contact Us page</h3>
+
+<h1>haschange: {{hasChanges}}</h1>
+
+<div class="border border-3 rounded-3 p-3 col-sm-4 offset-4">
+  <form #userForm="ngForm" (submit)="submitUserForm(userForm.value)">
+    <p>
+      FirstName:
+      <input name="firstName" #firstName='ngModel' [(ngModel)]='user.firstName' required minlength="5" />
+      @if(firstName.hasError('required')){
+        <span class="text-danger">FirstName is a required field</span>
+      }
+      @if(firstName.hasError('minlength')){
+        <span class="text-danger">FirstName should have minimum 5 chars</span>
+      }
+    </p>
+    <p>
+      lastName:
+      <input name="lastName" ngModel />
+    </p>
+    <p>
+      Email:
+      <input name="email" ngModel />
+    </p>
+    <div ngModelGroup="address">
+      <p>
+        Street:
+        <input name="street" ngModel />
+      </p>
+      <p>
+        City:
+        <input name="city" ngModel />
+      </p>
+      <p>
+        Pincode:
+        <input name="pincode" ngModel />
+      </p>
+    </div>
+
+    <input type="reset" value="Reset" />
+    <input type="submit" value="Submit" class="mx-2" />
+  </form>
+
+  <pre>{{userForm.value | json}}</pre>
+</div>

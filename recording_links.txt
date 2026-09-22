@@ -202,6 +202,13 @@ day_41_sept_20: (angular)
 https://zoom.us/rec/share/KxvYdcjcNj6IKocklJI7EZz6Zg_iidE3gQ_-recHOkZjLvXOQ1hY4dMOv7qXP_Kk.mu4AQczildT2yJfN 
 Passcode: HS&A9xgE
 
+day_42_sept_21: (fastapi)
+https://zoom.us/rec/share/B2tSyYHhmzmvVNQe-UcHoDQaoJxIz9_PMGl2PyP8j13Dg5P7-jtm0rUIVKcIyR6A.J_iPcKg9_oEsuBXD 
+Passcode: *&W12aPR
+
+day_43_sept_22: (angular)
+https://zoom.us/rec/share/galOP5xg4kdMVm3ta80xtPHTVN4XNzWKoNHtVilNf9dQi88KCMJXysSbJjcrlg0i.-TCMUq5LlaXgh_qW 
+Passcode: E+4*dK1S
 
 
 
