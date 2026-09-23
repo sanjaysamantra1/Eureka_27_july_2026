@@ -6,6 +6,7 @@ dependencies = [
     "bcrypt>=5.0.0",
     "fastapi[standard]>=0.141.1",
     "psycopg2-binary>=2.9.13",
+    "pydantic-settings>=2.15.0",
     "python-jose[cryptography]>=3.5.0",
     "sqlalchemy>=2.0.53",
     "uvicorn>=0.52.4",

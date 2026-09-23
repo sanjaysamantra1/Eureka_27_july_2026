@@ -1,10 +1,14 @@
-from fastapi import FastAPI, BackgroundTasks
+from pathlib import Path
+import shutil
+
+from fastapi import FastAPI, BackgroundTasks, HTTPException, UploadFile
 from routes.employee_routes import router as employee_router
 from routes.user_routes import router as user_router
 from routes.auth_routes import router as auth_router
 from routes.product_routes import router as product_router
 from fastapi.middleware.cors import CORSMiddleware
 from db.base import create_tables
+from core.config import settings
 
 app = FastAPI()
 
@@ -29,12 +33,11 @@ app.include_router(auth_router)  # register auth_router
 app.include_router(user_router)  # register user_router
 app.include_router(product_router)  # register the product_router
 
-
-def send_email():
-    for i in range(50000):
-        print(f"Sending email...{i}")
-    
-@app.get("/test_background")
-async def test_background(background_tasks: BackgroundTasks):
-    background_tasks.add_task(send_email)
-    return {"message": "Registration successful"}
+@app.get("/test_env")
+def test_env():
+    print(settings.database_url)
+    return {
+        "message" : "Hello",
+        "dataBase_url": settings.database_url,
+        "app_name": settings.app_name,
+    }
