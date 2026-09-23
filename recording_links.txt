@@ -210,6 +210,14 @@ day_43_sept_22: (angular)
 https://zoom.us/rec/share/galOP5xg4kdMVm3ta80xtPHTVN4XNzWKoNHtVilNf9dQi88KCMJXysSbJjcrlg0i.-TCMUq5LlaXgh_qW 
 Passcode: E+4*dK1S
 
+day_43_sept_22: (fastapi)
+https://zoom.us/rec/share/4QNgMIA9TOR6U18EBkQKqU57x7vjR88HG0KS-qD1bkM3JKYgFRbJTod12H_9wesV.VgENLQuqZ2FlxelV 
+Passcode: 14gsZF$A
+
+day_44_sept_23: (angular)
+https://zoom.us/rec/share/scu7Y2VeCKs7mRu3gW0fJqfFp1HbW4tfph3xTDjxpdEca7eRyGc9_K_UVT7al-Yz.Bi6b0b81tzzPbS6O 
+Passcode: F!Qs&d7Y
+
 
 
 
