@@ -218,6 +218,9 @@ day_44_sept_23: (angular)
 https://zoom.us/rec/share/scu7Y2VeCKs7mRu3gW0fJqfFp1HbW4tfph3xTDjxpdEca7eRyGc9_K_UVT7al-Yz.Bi6b0b81tzzPbS6O 
 Passcode: F!Qs&d7Y
 
+day_44_sept_23: (fastapi)
+https://zoom.us/rec/share/HxxCxrjmD1nzVEu_oDcgsoJDe5c2yTFIsJeoZrhfbjRe-xLwviYOHnI8YsDolS4.qjAJwRa3YImjYOua 
+Passcode: 0@yX.Dt6
 
 
 
