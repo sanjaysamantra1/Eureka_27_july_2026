@@ -8,7 +8,8 @@ import { Products } from './components/products/products';
 import { UserList } from './components/user-list/user-list';
 import { Userdetails } from './components/userdetails/userdetails';
 import { Productdetails } from './components/productdetails/productdetails';
-import { ProductList } from './components/product-list/product-list';
+// import { ProductList } from './components/product-list/product-list';
+
 import { PermanentJobs } from './components/permanent-jobs/permanent-jobs';
 import { ContractJobs } from './components/contract-jobs/contract-jobs';
 import { UploadVideos } from './components/upload-videos/upload-videos';
@@ -31,7 +32,11 @@ export const routes: Routes = [
     component: Contactus,
     canDeactivate:[canExitGuard]
   },
-  { path: 'products', component: ProductList },
+  {
+    path: 'products',
+    // component: ProductList
+    loadComponent: () => import('./components/product-list/product-list').then((x) => x.ProductList)
+  },
   { path: 'productdetails', component: Productdetails },
   { path: 'users', component: UserList },
   { path: 'userdetails/:id', component: Userdetails },
