@@ -1,7 +1,7 @@
 from pathlib import Path
 import shutil
 
-from fastapi import FastAPI, BackgroundTasks, HTTPException, Query, UploadFile
+from fastapi import FastAPI, BackgroundTasks, HTTPException, Query, Request, UploadFile
 from routes.employee_routes import router as employee_router
 from routes.user_routes import router as user_router
 from routes.auth_routes import router as auth_router
@@ -13,6 +13,16 @@ from core.config import settings
 import redis.asyncio as redis
 import httpx
 import json
+
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    filename="app.log",
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+)
+logger = logging.getLogger(__name__)
+
 
 app = FastAPI()
 
@@ -32,23 +42,38 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.middleware("http")
+async def security_headers(request: Request, call_next):
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    response.headers["Strict-Transport-Security"] = (
+        "max-age=31536000; includeSubDomains"
+    )
+    response.headers["server"] = 'None'
+    return response
+
+
 app.include_router(employee_router)  # register employee_router
 app.include_router(auth_router)  # register auth_router
 app.include_router(user_router)  # register user_router
 app.include_router(product_router)  # register the product_router
 
 
-redis_client = redis.Redis(host="127.0.0.1", port=6379,
-    decode_responses=True,
-    protocol=2)
+redis_client = redis.Redis(
+    host="127.0.0.1", port=6379, decode_responses=True, protocol=2
+)
 
 WIKIPEDIA_API = "https://en.wikipedia.org/w/api.php"
-HEADERS = {
-    "User-Agent": "FastAPITrainingApp/1.0 (your-email@example.com)"
-}
+HEADERS = {"User-Agent": "FastAPITrainingApp/1.0 (your-email@example.com)"}
+
 
 @app.get("/country")
-async def get_country(countryname: str = Query(...)):
+async def get_country(request: Request, countryname: str = Query(...)):
+    logger.info(f"country end point called {request.client.host}")
     # Normalize country name
     countryname = countryname.strip().lower()
 

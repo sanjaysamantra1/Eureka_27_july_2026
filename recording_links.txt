@@ -222,6 +222,14 @@ day_44_sept_23: (fastapi)
 https://zoom.us/rec/share/HxxCxrjmD1nzVEu_oDcgsoJDe5c2yTFIsJeoZrhfbjRe-xLwviYOHnI8YsDolS4.qjAJwRa3YImjYOua 
 Passcode: 0@yX.Dt6
 
+day_45_sept_24: (angular)
+https://zoom.us/rec/share/nv6aZszaoeSKNEervvaT52gWF1PmrlgWcx2eD4SSis18sdisJHKD-xZHL378RbFu.4iwNgbGUgyz-OpkO 
+Passcode: =+A@d0aV
+
+day_45_sept_24: (fastapi)
+https://zoom.us/rec/share/-EF2fh4J3BV1BBEqFYtdOknRwxtpUuqY4ZkuwgGDVhnEepWWBkHYU7Nh7gMGwZTl.0LziWuyBjfslwO35 
+Passcode: WK116K*0
+
 
 
 
