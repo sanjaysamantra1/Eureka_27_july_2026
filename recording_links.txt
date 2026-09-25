@@ -230,6 +230,9 @@ day_45_sept_24: (fastapi)
 https://zoom.us/rec/share/-EF2fh4J3BV1BBEqFYtdOknRwxtpUuqY4ZkuwgGDVhnEepWWBkHYU7Nh7gMGwZTl.0LziWuyBjfslwO35 
 Passcode: WK116K*0
 
+day_46_sept_25: (angular)
+https://zoom.us/rec/share/HIjlOcsUWsp3UKfGlLvfQP5Ox4bBNGzmY4XwOv3zMnbJJncc69SRQCoHEuOlsHbe.Qwt6IoXIrudMf568 
+Passcode: 5h$Q@?i6
 
 
 

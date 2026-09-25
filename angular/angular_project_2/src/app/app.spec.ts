@@ -20,4 +20,14 @@ describe('App', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h3')?.textContent).toContain('Hello, angular_project_2');
   });
+
+  it('should verify fetchData', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    const processDataSpy = vi.spyOn(app, 'processData'); // Spy For processData function
+    const result = app.fetchData();
+    expect(processDataSpy).toHaveBeenCalled(); // Verify processData was called
+    expect(processDataSpy).toHaveBeenCalledWith(['item1', 'item2', 'item3']); // Verify correct arguments
+    expect(result).toBe(3); // Verify the return value
+  });
 });
